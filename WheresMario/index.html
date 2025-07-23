@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ME210 Winter 2025: Bots & Pans - Lab Report</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>ME210 Winter 2025: Bots & Pans - Lab Report</h1>
+      <nav>
+        <ul>
+          <li><a href="#introduction">Introduction</a></li>
+          <li><a href="#software">Software Architecture</a></li>
+          <li><a href="#hardware">Hardware Architecture</a></li>
+          <li><a href="#design">Design and Implementation</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Introduction Section -->
+      <section id="introduction">
+        <h2>Overarching Introduction</h2>
+        <p>
+        This report details the hardware and software architecture as well as the strategy implemented for our "Bots & Pans" robot project. Our approach utilized a master-slave Arduino setup with a custom communication protocol to create a robust autonomous system capable of navigating the kitchen environment, interacting with the pot, turning on the stove, and dropping ingredients as required by the competition rules.
+        Further, the hardware for our project integrates our software system with a robust hardware platform that initially incorporated nine sensors (including ultrasonic and IR arrays), six DC motors paired with three motor drivers, and a speaker/amplifier circuit for electromechanical feedback.
+        Finally, our mechanical design makes for a robust ease of placement and wiring for our electrical components while maintaining all necessary functions and specifications to work with our strategy.
+        </p>
+        <img src="images/team final pic.JPG" alt="Bots & Pans Robot Project" />
+        <p>
+          From left to right: Mario Sumali, Spencer Seay, Sutton Yazzolino, and Shane Mion
+        </p>
+        <img src="images/robot final pic.JPG" alt="Bots & Pans Robot Project" />
+      </section>
+
+      <!-- Software Architecture Section -->
+      <section id="software">
+        <h1>ME210 Winter 2025: Bots &amp; Pans - Software Strategy Report</h1>
+
+        <h2>Introduction</h2>
+        <p>
+          This report details the software architecture and strategy implemented
+          for our "Bots &amp; Pans" robot project. Our approach utilized a
+          master-slave Arduino setup with a custom communication protocol to
+          create a robust autonomous system capable of navigating the kitchen
+          environment, interacting with the pot, turning on the stove, and
+          dropping ingredients as required by the competition rules.
+        </p>
+
+        <h2>Software Architecture Overview</h2>
+
+        <h3>Master-Slave Configuration</h3>
+        <p>
+          We implemented a distributed computing approach using two Arduino
+          microcontrollers:
+        </p>
+        <ul>
+          <li>
+            <strong>Sensor Arduino (Master):</strong> Responsible for sensor
+            data collection, state machine management, decision-making logic,
+            and secondary motor control (ball drop and ignitor arm mechanisms).
+          </li>
+          <li>
+            <strong>Motor Arduino (Slave):</strong> Dedicated to controlling the
+            four-wheel drivetrain based on commands received from the master
+            Arduino.
+          </li>
+        </ul>
+        <p>
+          This separation of concerns allowed us to distribute computational
+          load and create more manageable code modules while providing
+          functional isolation between critical systems.
+        </p>
+
+        <h3>Communication Protocol</h3>
+        <p>
+          The communication between the two Arduinos is managed by a custom
+          serial protocol (defined in SerialProtocol.h) that includes:
+        </p>
+        <ul>
+          <li>Structured message format with start/end bytes (0xFF/0xFE)</li>
+          <li>
+            Message type differentiation (commands, acknowledgments, errors)
+          </li>
+          <li>Data length and payload fields</li>
+          <li>Checksum verification for error detection</li>
+          <li>Timeout handling for reliable communication</li>
+        </ul>
+        <p>
+          This protocol ensures robust communication between the Arduinos, with
+          acknowledgment mechanisms to confirm command execution and error
+          handling to recover from communication failures.
+        </p>
+
+        <h3>State Machine Design</h3>
+        <p>
+          The core of our control system is a finite state machine implemented
+          on the Sensor Arduino with the following states:
+        </p>
+        <ul>
+          <li>
+            <strong>IDLE_START:</strong> Initial waiting state that transitions
+            to orientation after a brief delay
+          </li>
+          <li>
+            <strong>INITIAL_ORIENTATION:</strong> Uses ultrasonic sensors to
+            establish position relative to walls
+          </li>
+          <li>
+            <strong>LOCATE_POT:</strong> Implements a search pattern to find the
+            pot using IR sensors
+          </li>
+          <li>
+            <strong>APPROACH_POT:</strong> Executes a sequence to move toward
+            the detected pot
+          </li>
+          <li>
+            <strong>PUSH_POT:</strong> A brute force alternative approach for
+            pot location and positioning
+          </li>
+          <li>
+            <strong>TURN_STOVE_ON:</strong> Controls the ignitor arm to activate
+            the burner
+          </li>
+          <li>
+            <strong>DROP_BALLS:</strong> Operates the ball drop mechanism to
+            deliver ingredients
+          </li>
+          <li>
+            <strong>BACK_TO_LOAD:</strong> Returns to the loading area for more
+            ingredients
+          </li>
+          <li>
+            <strong>BACK_TO_POT:</strong> Returns to the pot area to deliver
+            ingredients
+          </li>
+          <li>
+            <strong>END_STATE:</strong> Handles end-of-competition behaviors
+          </li>
+          <li>
+            <strong>ERROR_STATE:</strong> Handles error conditions and attempts
+            recovery
+          </li>
+          <li><strong>DUCK_STATE:</strong> Emergency stop state</li>
+        </ul>
+        <p>
+          This state machine design provides a clear flow of operation while
+          allowing for graceful error handling and recovery, with the
+          flexibility to adapt to different competition situations.
+        </p>
+
+        <h3>Sensor Integration</h3>
+
+        <h4>Ultrasonic Sensors</h4>
+        <p>Four ultrasonic sensors (front, left, back, right) are used for:</p>
+        <ul>
+          <li>Wall detection during initial orientation</li>
+          <li>
+            Establishing proper positioning within the kitchen environment
+          </li>
+          <li>Determining absolute position based on distance measurements</li>
+        </ul>
+        <p>
+          The function <code>measureDistance()</code> provides distance readings
+          in centimeters, while <code>isProperlyOriented()</code> uses these
+          readings to confirm correct positioning relative to walls.
+        </p>
+
+        <h4>IR Sensors</h4>
+        <p>
+          Four IR sensors were constructed and coded to be utilized to detect
+          the pot's position:
+        </p>
+        <ul>
+          <li>LEFT_OUTER_SENSOR</li>
+          <li>LEFT_CENTER_SENSOR</li>
+          <li>RIGHT_CENTER_SENSOR</li>
+          <li>RIGHT_OUTER_SENSOR</li>
+        </ul>
+        <p>
+          The purpose of these sensors was detect to the IR beacon on the pot
+          (emitting at 3333 Hz for Side A or 909 Hz for Side B) and update the
+          potPosition variable based on which sensors are triggered. This
+          process worked when testing in isolation; for example, when the robot
+          was placed in front of the IR sensor (at any distance), but when our
+          robot was executing its programmed strafing mechanism, the sensors did
+          not catch the IR. Thus, we resorted to simplest principles and coded
+          the robot to work independently of the IR sensors.
+        </p>
+
+        <h3>Motor Control Strategy</h3>
+
+        <h4>Movement Commands</h4>
+        <p>
+          The motor control system implements several basic movement functions:
+        </p>
+        <ul>
+          <li>Forward/backward movement at normal and slow speeds</li>
+          <li>Left/right lateral movement (strafing)</li>
+          <li>Rotational movement (turning left/right)</li>
+        </ul>
+        <p>
+          Each motor direction is controlled independently using the
+          <code>setMotor()</code> function, allowing precise control of the
+          robot's movement including holonomic (omnidirectional) movement
+          capabilities.
+        </p>
+
+        <h4>Safety Features</h4>
+        <p>
+          Several global mechanisms were implemented to adhere to our
+          requirements and :
+        </p>
+        <ul>
+          <li>
+            Global timeout (130 seconds, 2min:10sec) after which all motors and
+            speakers are stopped
+          </li>
+          <li>Command timeout checking with error state transition</li>
+          <li>Emergency stop capability via the main power switch</li>
+          <li>Acknowledgment system to verify command execution</li>
+        </ul>
+
+        <h3>Key Software Components</h3>
+
+        <h4>Initial Orientation Logic</h4>
+        <p>The orientation system follows a step-by-step approach:</p>
+        <ul>
+          <li>
+            Rotate until both left and back walls are detected at appropriate
+            distances
+          </li>
+          <li>
+            Execute a sequence of movements (backward, left, forward) to
+            establish a known position
+          </li>
+          <li>
+            Transition to the next appropriate state once orientation is
+            confirmed
+          </li>
+        </ul>
+        <p>
+          This approach ensures the robot begins operation from a consistent,
+          known position regardless of its random starting orientation.
+        </p>
+
+        <h4>Pot Finding Strategy</h4>
+        <p>We implemented two methods for pot interaction:</p>
+        <p>
+          <strong>Sensor-based method (LOCATE_POT and APPROACH_POT):</strong>
+        </p>
+        <ul>
+          <li>Uses IR sensors to detect the pot beacon</li>
+          <li>Alternates between strafing right and left to locate the pot</li>
+          <li>Once detected, executes a two-step approach sequence</li>
+        </ul>
+        <p><strong>Predefined movement method (PUSH_POT):</strong></p>
+        <ul>
+          <li>Follows a six-step sequence of movements</li>
+          <li>Executes strafing, forward/backward movements in a pattern</li>
+          <li>
+            Does not rely on sensor feedback, making it more robust in noisy
+            environments
+          </li>
+        </ul>
+        <p>
+          The second approach proved more reliable in competition conditions and
+          became our primary strategy.
+        </p>
+
+        <h2>Ball Delivery Cycle</h2>
+        <p>Our system implements a complete ingredient delivery cycle:</p>
+        <ul>
+          <li>
+            <strong>Ball Drop (DROP_BALLS):</strong>
+            <ul>
+              <li>Controls the ball drop motor for a precise duration</li>
+              <li>Uses pulsed movement for reliable ball release</li>
+              <li>Tracks the number of cycles completed</li>
+            </ul>
+          </li>
+          <li>
+            <strong>Return to Loading (BACK_TO_LOAD):</strong>
+            <ul>
+              <li>Three-step sequence to return to the ingredients area</li>
+              <li>Includes a non-blocking wait time for manual loading</li>
+            </ul>
+          </li>
+          <li>
+            <strong>Return to Pot (BACK_TO_POT):</strong>
+            <ul>
+              <li>Three-step sequence to return to the pot</li>
+              <li>Positions the robot optimally for the next ball drop</li>
+            </ul>
+          </li>
+          <li>
+            <strong>Cycle completion:</strong>
+            <ul>
+              <li>After 8 ball drop cycles, transitions to END_STATE</li>
+              <li>
+                Otherwise, continues the cycle to deliver more ingredients
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <p>
+          This cyclical approach maximizes points by delivering multiple batches
+          of ingredients.
+        </p>
+
+        <h2>End-of-Competition Behavior</h2>
+        <p>The END_STATE implements a complex sequence:</p>
+        <ul>
+          <li>Move backward slightly to create space</li>
+          <li>Toggle the ignitor arm to turn off the burner</li>
+          <li>Execute a sequence to move toward the customer area</li>
+          <li>Demonstrate completion with a celebratory ignitor arm toggle</li>
+        </ul>
+
+        <h2>Timing and Synchronization</h2>
+
+        <h4>Non-Blocking Design</h4>
+        <p>We implemented non-blocking timing throughout the code:</p>
+        <ul>
+          <li>Based on millis() rather than delay() where possible</li>
+          <li>
+            State transitions tracked by start times rather than blocking waits
+          </li>
+          <li>Allows sensor monitoring to continue during timed operations</li>
+        </ul>
+
+        <h4>Global Timeout Management</h4>
+        <p>
+          A global safety timeout system ensures the robot stops after the
+          competition duration:
+        </p>
+        <ul>
+          <li>Set in setup() with globalStartTime = millis()</li>
+          <li>Checked at the beginning of each loop iteration</li>
+          <li>
+            After 130 seconds, all motors stop and the robot enters DUCK_STATE
+          </li>
+          <li>Prevents uncontrolled operation beyond competition time</li>
+        </ul>
+
+        <h2>Communication Flow</h2>
+        <p>The message flow between Arduinos follows this pattern:</p>
+        <ul>
+          <li>Master sends command with parameters</li>
+          <li>Slave executes command for specified duration</li>
+          <li>Slave sends acknowledgment upon completion</li>
+          <li>Master processes acknowledgment and proceeds to next action</li>
+        </ul>
+        <p>Timeouts are carefully managed:</p>
+        <ul>
+          <li>
+            Commands time out after 5 seconds if no acknowledgment is received
+          </li>
+          <li>
+            Error handling triggers state transitions to recover from failures
+          </li>
+          <li>Clear command completion flags coordinate sequenced movements</li>
+        </ul>
+
+        <h2>Error Handling and Recovery</h2>
+        <p>Several error handling mechanisms were implemented:</p>
+        <ul>
+          <li>
+            Command timeouts: If no acknowledgment is received within 5 seconds
+          </li>
+          <li>
+            Error state transitions: Halts operation and attempts recovery
+          </li>
+          <li>Checksum verification: Ensures command integrity</li>
+          <li>Global timeout: Prevents runaway operation</li>
+        </ul>
+        <p>When an error is detected, the system:</p>
+        <ul>
+          <li>Stops all motors immediately</li>
+          <li>Transitions to ERROR_STATE</li>
+          <li>Waits 5 seconds to allow conditions to clear</li>
+          <li>Attempts to restart from INITIAL_ORIENTATION</li>
+        </ul>
+
+        <h2>Software Design Rationale</h2>
+
+        <h4>Why a Master-Slave Architecture?</h4>
+        <p>We chose the master-slave architecture for several reasons:</p>
+        <ul>
+          <li>
+            Resource Distribution: Separates sensor processing from motor
+            control
+          </li>
+          <li>
+            Fault Isolation: Errors in one system don't necessarily affect the
+            other
+          </li>
+          <li>
+            Simplified Development: Allowed parallel development of separate
+            components
+          </li>
+          <li>
+            Modularity: Clear separation of responsibilities between Arduinos
+          </li>
+        </ul>
+
+        <h4>Why a State Machine?</h4>
+        <p>The state machine design was selected because:</p>
+        <ul>
+          <li>
+            Clear Operational Flow: Each state has specific entry/exit
+            conditions
+          </li>
+          <li>
+            Easier Debugging: State transitions can be monitored and logged
+          </li>
+          <li>
+            Compartmentalized Logic: Each state's behavior is contained and
+            manageable
+          </li>
+          <li>
+            Resilience: The system can recover from errors by returning to known
+            states
+          </li>
+        </ul>
+
+        <h4>Why Implement a Custom Communication Protocol?</h4>
+        <p>The custom protocol provides:</p>
+        <ul>
+          <li>
+            Reliability: Acknowledgment system ensures commands are executed
+          </li>
+          <li>
+            Error Detection: Checksum verification prevents corrupted commands
+          </li>
+          <li>
+            Flexibility: Different message types for various communication needs
+          </li>
+          <li>
+            Structure: Well-defined format makes message parsing straightforward
+          </li>
+        </ul>
+
+        <h4>Brute Force vs. Sensor-Based Approaches</h4>
+        <p>
+          After testing, we found that a more deterministic approach with
+          predefined movement sequences (PUSH_POT state) proved more reliable
+          than purely sensor-based methods:
+        </p>
+        <ul>
+          <li>
+            Environmental Robustness: Less affected by sensor noise or
+            calibration issues
+          </li>
+          <li>Predictability: Consistent behavior in competition conditions</li>
+          <li>Simplicity: Reduces complexity in decision-making logic</li>
+          <li>Reliability: Higher success rate in repeated testing</li>
+        </ul>
+        <p>
+          However, we maintained the sensor-based methods as fallbacks and for
+          initial orientation.
+        </p>
+
+        <h2>Conclusion</h2>
+        <p>
+          Our software strategy prioritized reliability, modularity, and
+          robustness. The master-slave architecture with a state machine design
+          allowed us to create a system capable of handling the complex
+          sequences required for the competition while maintaining resilience to
+          errors and unexpected conditions. The custom communication protocol
+          ensured reliable operation between the two Arduinos, creating a
+          cohesive system that effectively navigated the kitchen environment and
+          completed the required tasks.
+        </p>
+        <p>
+          The implementation of multiple approach strategies (sensor-based and
+          predefined) provided flexibility, while the cyclical ball delivery
+          system maximized scoring opportunities. Global timeout handling and
+          comprehensive error recovery made the system robust in competition
+          conditions.
+        </p>
+
+        <h2>Future Improvements</h2>
+        <ul>
+          <li>
+            Advanced Sensor Fusion: Combine ultrasonic and IR sensor data for
+            more accurate positioning
+          </li>
+          <li>
+            Dynamic Path Planning: Replace predefined movement sequences with
+            adaptive pathfinding
+          </li>
+          <li>
+            PID Control: Implement closed-loop control for more precise
+            movements and positioning
+          </li>
+          <li>
+            Machine Learning: Train the system to identify optimal strategies
+            based on competition scenarios
+          </li>
+          <li>
+            Enhanced Communication Protocol: Add additional message types for
+            more nuanced interactions
+          </li>
+          <li>
+            Visual Feedback: Add LED indicators for state visualization and
+            debugging
+          </li>
+          <li>
+            Adaptive Ball Drop Mechanism: Adjust motor speed based on feedback
+            from previous drops
+          </li>
+          <li>
+            Improved Error Classification: Distinguish between different types
+            of errors for more specific recovery strategies
+          </li>
+        </ul>
+      </section>
+
+      <!-- Hardware Architecture Section -->
+      <section id="hardware">
+        <h2>Hardware Architecture Overview</h2>
+
+        <!-- Overview -->
+        <article id="hardware-overview">
+          <p>
+            Our design initially implemented 9 sensors, 6 DC motors, 3 Motor
+            Drivers, and a speaker/amplifier circuit.
+          </p>
+        </article>
+
+        <!-- Sensors -->
+        <article id="hardware-sensors">
+          <h3>Sensors</h3>
+          <h4>IMU (Inertial Measurement Unit)</h4>
+          <p>
+            We planned to use the accelerometer and gyroscope on this device to
+            get an initial orientation of the robot so that it could correct its
+            movements based on its known position. Ultimately, the IMU was too
+            inaccurate to be used and we could not fix it in software, so we
+            decided not to use this sensor.
+          </p>
+          <img src="images/hardware-imu.jpg" alt="IMU Sensor" />
+
+          <h4>Ultrasonic Sensor</h4>
+          <p>
+            We placed these sensors low on the robot in order to be able to
+            sense the distances between the robot and the walls for initial
+            orientation. We also planned to utilize these for orientation later
+            in the round to help find the pantry and avoid collisions.
+          </p>
+          <img src="images/hardware-ultrasonic.jpg" alt="Ultrasonic Sensors" />
+
+          <h4>IR Sensor</h4>
+          <p>
+            We chose to implement four of the IR sensors from lab 1 for
+            redundancy and to read a larger area. Since the signal acceptance
+            angle is 10 degrees for the IR phototransistors we were given, we
+            wanted to position 4 to cover a greater area and be better able to
+            find the IR emitter. We made one alteration from the lab 1
+            implementation of this circuit: increased the gain. We swapped the
+            resistor for a larger one in order to increase the sensitivity of
+            the phototransistor which in turn increased the distance we could
+            sense the emitter from.
+          </p>
+          <img src="images/hardware-ir.png" alt="IR Sensors" />
+        </article>
+
+        <!-- Motors & Motor Drivers -->
+        <article id="hardware-motors">
+          <h3>Motors & Motor Drivers</h3>
+          <p>
+            We chose to use the DC motors and Motor Drivers from lab 2 due to
+            their availability, our familiarity with them, low cost, and
+            suitable speed/torque specifications. Although DC motors make it
+            more challenging to track the robot’s position due to the inability
+            to count wheel rotations, we opted to use sensor-based positioning
+            instead.
+          </p>
+          <img
+            src="images/hardware-motors.png"
+            alt="Motors and Motor Drivers"
+          />
+        </article>
+
+        <!-- Speaker and Amplifier Circuit -->
+        <article id="hardware-speaker">
+          <h3>Speaker and Amplifier Circuit</h3>
+          <p>
+            A speaker and amplifier circuit was used to play music during
+            competition, fulfilling the requirement of having an
+            electromechanical indication of operation. This approach was chosen
+            because it was fun, simple to implement, and low-cost—especially
+            since one team member had previously built the circuit for another
+            class.
+          </p>
+          <img
+            src="images/hardware-speaker.jpg"
+            alt="Speaker and Amplifier Circuit"
+          />
+        </article>
+
+        <!-- Hardware Design Rationale -->
+        <article id="hardware-rationale">
+          <h3>Hardware Design Rationale</h3>
+          <p>
+            Our initial game plan included most, if not all, of these sensors to
+            allow for redundancy and multiple backup strategies. We implemented
+            all the sensors from the more complex plan during the building phase
+            so we could later choose which ones to use during testing.
+            Ultimately, due to issues with some sensors and time constraints, we
+            simplified the approach.
+          </p>
+        </article>
+
+        <!-- Discussion -->
+        <article id="hardware-discussion">
+          <h3>Discussion</h3>
+          <p>
+            The circuit design was relatively straightforward, though we faced
+            challenges such as fragile wire connections and selecting the
+            correct pins on the Arduino. Wire connections were often compromised
+            during battery connection/disconnection, so we used hot glue to
+            secure them. Additionally, the Arduino Uno’s dedicated PWM pins
+            (490Hz or 980Hz) were used to achieve more accurate speed control,
+            after finding that software-based PWM on non-dedicated pins affected
+            performance.
+          </p>
+        </article>
+
+        <!-- Hardware Conclusion -->
+        <article id="hardware-conclusion">
+          <h3>Hardware Conclusion</h3>
+          <p>
+            In conclusion, the hardware solutions chosen for this project
+            provide a robust foundation for reliable performance and future
+            scalability. Each component—from the central processing unit to the
+            specialized peripherals—was carefully evaluated based on
+            functionality, compatibility, and longer-term needs. By balancing
+            cost-effectiveness with technical capability, the hardware
+            architecture met current requirements while leaving room for future
+            upgrades. This selection not only achieved immediate performance
+            benchmarks but also positions the project for more complex future
+            implementations.
+          </p>
+        </article>
+      </section>
+
+      <!-- Design Section -->
+      <section id="design">
+        <h2>Design and Implementation</h2>
+        <p>
+          We split our design into two “levels” to physically separate our parts. The goal of this was to make it easy to start prototyping our driving and all of its related sensors while we were still spending time designing our ball dropper / igniter / IR phototransistor sensor systems. These were connected by standoffs for easy assembly integration. Eventually, this top level was split into another level which supported a breadboard with our IR phototransistor to accommodate these being at the height of the IR LEDs.
+        </p>
+        <h3>Bottom Layer</h3>
+        <p>
+          Because the ethos of our design was to be able to build off of our existing parts as much as possible, we knew that we wanted our design to efficiently lay out components as well as save space for components that we would need to add haphazardly later. As such, we designed our bottom base as large as possible, driven by a 11.75” square to allow some room for tolerancing.
+        </p>
+        <p><img src="images/bottomdiagram.jpg" alt="bottomdiagram.jpg" /></p>
+        <p>
+          After laying out the essential components, we made space for standoffs to be mounted, space for wires to pass through the board, and added various extra holes for mounting any components we may deem necessary later.
+        </p>
+        <p><img src="images/bottomlaswer.jpg" alt="bottomlaswer.jpg" /></p>
+        <p>
+          This part of the design process came in tandem with designing our brackets for our ultrasonic sensors and motors to ensure the drive level could be completed as soon as possible.
+        </p>
+        <p>
+          Our ultrasonic sensor bracket allows for the sensor to be friction fit for easy implementation. Moreover, it has holes through it for easy wiring.
+        </p>
+        <p>
+          <img src="images/ultrasonic1.png" alt="ultrasonic1.png" />
+          <img src="images/ultrasonic2.png" alt="ultrasonic2.png" />
+        </p>
+        <p>
+          We designed a simple bracket for the motor based on its online technical drawings. However, we at first found that it was flexing too much to do the weight of the robot and position of the wheels applying a moment. To address this, we added a diagonal support and found this worked quite well.
+        </p>
+        <p>
+          <img src="images/bracket.png" alt="bracket.png" />
+          <img src="images/bracketdiagonal.png" alt="bracketdiagonal.png" />
+        </p>
+        <p>This gives us a final base that looks something like this:</p>
+        <p><img src="images/cadmodelbase.png" alt="cadmodelbase.png" /></p>
+        <h3>Top Layer</h3>
+        <p>
+          For our top layer, we started by designing the ball drop mechanism as that is the most important (and space consuming) part of the assembly. We wanted to keep the mechanism as simple as possible. We felt that a sloped ball-dropper geometrically was difficult to implement given the 12” max height and the 10” top of the bin, so we elected to use a spinner mechanism driven by one motor. The concept was a spinner with prongs to spin each ball and a guide rail to force the ball along a path off the robot. This concept drew design inspiration from tennis ball machines and gumball machines.
+        </p>
+        <p><img src="images/spinner1.png" alt="spinner1.png" /></p>
+        <p>
+          After making a cutout for screw holes, lightweighting the design, and building out the guide, the assembly looked like so:
+        </p>
+        <p><img src="images/spinner2.png" alt="spinner2.png" /></p>
+        <p>
+          With the ball spinner mechanism complete, we went ahead and filled out the top plate.
+        </p>
+        <p><img src="images/topplate.png" alt="topplate.png" /></p>
+        <p>
+          We then laid out a mini layer that drops down to ensure that the IR phototransistor and ignitor arms are at the proper height.
+        </p>
+        <p>
+          <img src="images/Topplate2.png" alt="Topplate2.png" />
+          <img src="images/topplateside.png" alt="topplateside.png" />
+        </p>
+        <h3>Integration And Iteration</h3>
+        <p>
+          Finally, we put together some 3D printed standoffs with heat set inserts and everything was finally connected.
+        </p>
+        <p><img src="images/completedrobot.jpg" alt="completedrobot.jpg" /></p>
+        <p>
+          We had two concerns we wanted to test: pushing the pot and using the spinner. The standoffs are great in axial loading, however the system could be a bit wobbly with taking forces from the side as would be required to push the pot. However, we had bet that the slider resistance would be sufficiently low that this would not be a problem and fortunately this was the case. When it came to testing the the spinner, we did unfortunately run into some issues. We encountered an issue where the balls had too much friction and were spinning and getting jammed instead of sliding. This happened when they were being moved against the guide rail.
+        </p>
+        <p><img src="images/spinnerissue.png" alt="spinnerissue.png" /></p>
+        <p>
+          We tried to rectify this by creating a spinner with little wedges to dislodge the ball from the wall. However, this design still ran into the same issue.
+        </p>
+        <p><img src="images/spinnersolution1.png" alt="spinnersolution1.png" /></p>
+        <p>
+          We elected to create a plate with circular holes to control the contact surface and reduce the area of contact. This seemed promising in our preliminary testing. However, this design created its own problems as the height the plate is featured off the surfacing (the height where it contacts the balls) is very important in the way it affects the balls spinning. Moreover, if we would accelerate too quickly, balls might fall out of our spinner. These would end up being problems we would continue to deal with through the final competition.</p>
+          <p><img src="images/spinnersolution2.png" alt="spinnersolution2.png"></p>
+          
+          <h2>Design And Implementation Conclusion</h2>
+          <p>In conclusion, our approach of creating two layers to get prototyping done early was very successful. Moreover, our careful control of the electrical component layout allowed us to save space for other add-ons determined later (e.g. an absolutely massive speaker). The greatest issue we dealt with was our spinner mechanism. In hindsight, we likely should have pivoted away from the spinner concept instead of adapting it to try to make it work. Given how much space we had on our top plate and how easy it would be to adjust the height of the robot by adjusting the standoffs, it would have been in our best interest to come up with another ball drop subsystem.</p>
+          <p>All of our CAD can be accessed through the following link: <a href="https://cad.onshape.com/documents/f6a4f9145ec7fb23f94849f1/w/98c13501faa841b633532381/e/981502831ad96525bfae46fb?renderMode=0&amp;uiState=67d4aef9659ea159d21e13f4">CAD Model</a></p>
+        </section>
+      </section>
+    </main> 
+
+
+    <footer>
+      <p>&copy; 2025 ME210 Lab Team. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
