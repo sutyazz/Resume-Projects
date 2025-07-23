@@ -1,23 +1,22 @@
-# Network Latency Monitoring Web App (2024)
+# Dual-Wavelength Fiber Optic UART (2025)
 
 ## Project Overview
-Developed a Flask-based web application to monitor real-time network latency in military systems, featuring HTML/CSS/JS frontend with backend TCP/UDP data handling in C, and analysis of fiber-optic transmission.
+Achieved full-duplex UART communication on a single fiber optic cable by modulating blue and IR LEDs, with custom transimpedance amplifier (TIA) and comparator circuits for signal decoding.
 
 ## Skills Demonstrated
-- **Web Development**: Flask framework, HTML/CSS/JavaScript
-- **Backend Programming**: C programming for TCP/UDP networking
-- **Network Programming**: Socket programming, protocol implementation
-- **System Integration**: Military systems integration and monitoring
-- **Data Analysis**: Real-time latency analysis and visualization
-- **Fiber-Optic Systems**: Transmission analysis and optimization
+- **Optical Communication**: Fiber optic signal transmission and reception
+- **Analog Circuit Design**: Transimpedance amplifiers, comparators, filter design
+- **Digital Communication**: UART protocol implementation, bit error rate analysis
+- **Signal Processing**: Signal integrity optimization, gain control
+- **Hardware Design**: LED drivers, photodetector circuits, amplifier design
+- **Performance Analysis**: BER measurement and optimization
 
 ## Key Features
-- Real-time network latency monitoring
-- Web-based dashboard for system visualization
-- TCP/UDP data handling capabilities
-- Military-grade system integration
-- Fiber-optic transmission analysis
-- Interactive data visualization
+- Full-duplex communication on single fiber optic cable
+- Dual-wavelength operation (blue and IR LEDs)
+- Custom TIA and comparator design
+- High-speed UART communication
+- Optimized signal integrity with low BER
 
 ## Technical Implementation
 - Developed Flask web application with responsive frontend design

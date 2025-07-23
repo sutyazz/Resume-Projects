@@ -2,6 +2,19 @@
 
 A comprehensive collection of engineering and computer science projects demonstrating expertise across multiple domains including embedded systems, web development, machine learning, signal processing, and hardware design.
 
+## Table of Contents
+
+1. [CS109 Challenge Project](#cs109-challenge-project)
+2. [EE118 Final Project](#ee118-final-project)
+3. [EE119 Final Project](#ee119-final-project)
+4. [EE156 Final Project](#ee156-final-project)
+5. [EE167 Final Project](#ee167-final-project)
+6. [Class D Audio Amplifier](#class-d-audio-amplifier)
+7. [Machine Learning VR Project](#machine-learning-vr-project)
+8. [Dual-Wavelength Fiber Optic UART](#dual-wavelength-fiber-optic-uart)
+
+---
+
 ## Projects Overview
 
 ### 🎛️ **Digital Audio & Signal Processing**
@@ -21,6 +34,7 @@ A comprehensive collection of engineering and computer science projects demonstr
 ### 🌐 **Web Development & Networking**
 - **[Network Latency Monitoring App (2024)](./Network_Latency_Monitoring_App_2024/)** - Flask-based web app for military network monitoring with C backend
 - **[Autonomous Robot Web Interface (2025)](./Autonomous_Robot_Web_Interface_2025/)** - Comprehensive web documentation and control interface
+- **[Personal Website & Daily Habit Tracker (2023-2024)](./MyWebsite%20-%20WIP/)** - Full-stack personal web application combining photography portfolio with habit tracking system
 
 ## Technical Skills Demonstrated
 

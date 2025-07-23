@@ -1,22 +1,22 @@
-# Dual-Wavelength UART over Fiber Optic (2025)
+# Machine Learning VR Project (2024)
 
 ## Project Overview
-Achieved full-duplex UART communication on a single fiber optic cable by modulating blue and IR LEDs, with custom transimpedance amplifier (TIA) and comparator circuits for signal decoding.
+Developed an immersive virtual reality experience that integrates machine learning algorithms for intelligent interaction and adaptive user experiences using Unity3D and TensorFlow.
 
 ## Skills Demonstrated
-- **Optical Communication**: Fiber optic signal transmission and reception
-- **Analog Circuit Design**: Transimpedance amplifiers, comparators, filter design
-- **Digital Communication**: UART protocol implementation, bit error rate analysis
-- **Signal Processing**: Signal integrity optimization, gain control
-- **Hardware Design**: LED drivers, photodetector circuits, amplifier design
-- **Performance Analysis**: BER measurement and optimization
+- **Virtual Reality Development**: Unity3D, VR SDK integration
+- **Machine Learning**: TensorFlow, neural networks, real-time inference
+- **3D Graphics Programming**: Shader development, spatial computing
+- **User Experience Design**: Immersive interface design, interaction systems
+- **Real-time Systems**: Low-latency ML inference for VR applications
+- **Cross-platform Development**: VR headset compatibility and optimization
 
 ## Key Features
-- Full-duplex communication on single fiber optic cable
-- Dual-wavelength operation (blue and IR LEDs)
-- Custom TIA and comparator design
-- High-speed UART communication
-- Optimized signal integrity with low BER
+- Immersive VR environment with machine learning integration
+- Real-time adaptive user experience based on ML algorithms
+- Interactive 3D environments and spatial computing
+- Intelligent object recognition and interaction
+- Optimized performance for VR hardware requirements
 
 ## Technical Implementation
 - Designed and implemented dual-wavelength LED modulation system
