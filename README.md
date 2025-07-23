@@ -50,14 +50,15 @@ A comprehensive collection of engineering and computer science projects demonstr
 - `**Signal Processing:** Digital filters, FFT, radar processing, optical communication, audio synthesis
 - `**Machine Learning:** Monte Carlo methods, Bayesian updating, statistical analysis
 
+
+
 ## Project Reports
 
-- Class_D_Audio_Amplifier_Report_2023.pdf` - Class D amplifier design and optimization
-- Dual_Wavelength_Fiber_Optic_UART_Report_2025.pdf` - Photonics engineering project documentation
-- Dual_Wavelength_Fiber_Optic_UART_Report_2025.pdf` - Detailed technical report on fiber optic communication
-- Machine_Learning_Flight_Pathing_Report_2025.pdf` - Comprehensive analysis of ML flight optimization
-- Wearable_PPG_Sensor_PCB_Instructions_2024.pdf` - PCB design and implementation guide
-- GitHub_Portfolio_Documentation.pdf` - Portfolio organization and project documentation
+- **Dual_Wavelength_Fiber_Optic_UART_Report_2025.pdf** – Technical documentation of full-duplex fiber optic UART communication using dual-wavelength modulation and custom analog front-end circuits
+- **Machine_Learning_Flight_Pathing_Report_2025.pdf** – Analysis and results of machine learning-based flight path optimization for eVTOL risk assessment
+- **Machine_Learning_VR_Project_2024.pdf** – Overview and results of immersive VR project integrating machine learning algorithms
+- **Wearable_PPG_Sensor_PCB_Instructions_2024.pdf** – Step-by-step guide for PCB design, assembly, and testing of a wearable PPG biometric sensor
+- **Power_Electronics_ Flyback_Converter.pdf** – Design and analysis of a power electronics flyback converter system
 
 ## Contact & Links
 
