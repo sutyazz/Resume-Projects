@@ -1,0 +1,289 @@
+{
+  "version": 5,
+  "name": "FiberOpticSetupSelfMadeBeam",
+  "modules": {
+    "OpticalFiber": {
+      "numPoints": 2,
+      "params": [
+        "X=1:1:100:80",
+        "Y=1:1:100:20",
+        "n_1=1:0.01:2:1.456",
+        "n_2=1:0.01:2:1.44"
+      ],
+      "objs": [
+        {
+          "type": "Glass",
+          "path": [
+            {
+              "x": "`x_1`",
+              "y": "`y_1-X/2`",
+              "arc": false
+            },
+            {
+              "x": "`x_1`",
+              "y": "`y_1+X/2`",
+              "arc": false
+            },
+            {
+              "x": "`x_2`",
+              "y": "`y_2+X/2`",
+              "arc": false
+            },
+            {
+              "x": "`x_2`",
+              "y": "`y_2-X/2`",
+              "arc": false
+            }
+          ],
+          "refIndex": "`n_1`"
+        },
+        {
+          "type": "Blocker",
+          "p1": {
+            "x": "`x_1`",
+            "y": "`y_1-X/2-Y`"
+          },
+          "p2": {
+            "x": "`x_2`",
+            "y": "`y_2-X/2-Y`"
+          }
+        },
+        {
+          "type": "Blocker",
+          "p1": {
+            "x": "`x_1`",
+            "y": "`y_1+X/2+Y`"
+          },
+          "p2": {
+            "x": "`x_2`",
+            "y": "`y_2+X/2+Y`"
+          }
+        },
+        {
+          "type": "Glass",
+          "path": [
+            {
+              "x": "`x_1`",
+              "y": "`y_1-X/2`",
+              "arc": false
+            },
+            {
+              "x": "`x_1`",
+              "y": "`y_1-X/2-Y`",
+              "arc": false
+            },
+            {
+              "x": "`x_2`",
+              "y": "`y_2-X/2-Y`",
+              "arc": false
+            },
+            {
+              "x": "`x_2`",
+              "y": "`y_2-X/2`",
+              "arc": false
+            }
+          ],
+          "refIndex": "`n_2`"
+        },
+        {
+          "type": "Glass",
+          "path": [
+            {
+              "x": "`x_1`",
+              "y": "`y_1+X/2`",
+              "arc": false
+            },
+            {
+              "x": "`x_1`",
+              "y": "`y_1+X/2+Y`",
+              "arc": false
+            },
+            {
+              "x": "`x_2`",
+              "y": "`y_2+X/2+Y`",
+              "arc": false
+            },
+            {
+              "x": "`x_2`",
+              "y": "`y_2+X/2`",
+              "arc": false
+            }
+          ],
+          "refIndex": "`n_2`"
+        }
+      ]
+    }
+  },
+  "objs": [
+    {
+      "type": "DiffractionGrating",
+      "p1": {
+        "x": 412.75,
+        "y": 354
+      },
+      "p2": {
+        "x": 412.75,
+        "y": 504
+      },
+      "lineDensity": 1500,
+      "customBrightness": true,
+      "brightnesses": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "type": "IdealLens",
+      "p1": {
+        "x": 399.5,
+        "y": 342.5
+      },
+      "p2": {
+        "x": 400,
+        "y": 510
+      },
+      "focalLength": 50
+    },
+    {
+      "type": "Beam",
+      "p1": {
+        "x": 446,
+        "y": 407.5
+      },
+      "p2": {
+        "x": 425.5,
+        "y": 390
+      },
+      "wavelength": 500
+    },
+    {
+      "type": "ModuleObj",
+      "module": "OpticalFiber",
+      "points": [
+        {
+          "x": 349.875,
+          "y": 426.375
+        },
+        {
+          "x": 39.5,
+          "y": 425.375
+        }
+      ],
+      "params": {
+        "X": 2,
+        "Y": 1,
+        "n_1": 2,
+        "n_2": 1
+      }
+    },
+    {
+      "type": "IdealLens",
+      "p1": {
+        "x": -9.5,
+        "y": 318.5
+      },
+      "p2": {
+        "x": -11,
+        "y": 531.5
+      },
+      "focalLength": 50
+    },
+    {
+      "type": "DiffractionGrating",
+      "p1": {
+        "x": -23.75,
+        "y": 349
+      },
+      "p2": {
+        "x": -23.75,
+        "y": 499
+      },
+      "customBrightness": true,
+      "brightnesses": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "type": "AngleSource",
+      "p1": {
+        "x": -71,
+        "y": 349.5
+      },
+      "p2": {
+        "x": -54,
+        "y": 368
+      },
+      "wavelength": 680
+    },
+    {
+      "type": "Blocker",
+      "p1": {
+        "x": 49.5,
+        "y": 261
+      },
+      "p2": {
+        "x": 50,
+        "y": 423
+      }
+    },
+    {
+      "type": "Blocker",
+      "p1": {
+        "x": 49.5,
+        "y": 429.5
+      },
+      "p2": {
+        "x": 50,
+        "y": 591.5
+      }
+    },
+    {
+      "type": "Blocker",
+      "p1": {
+        "x": 335,
+        "y": 261.5
+      },
+      "p2": {
+        "x": 335.5,
+        "y": 423.5
+      }
+    },
+    {
+      "type": "Blocker",
+      "p1": {
+        "x": 335,
+        "y": 427.5
+      },
+      "p2": {
+        "x": 335.5,
+        "y": 589.5
+      }
+    },
+    {
+      "type": "IdealLens",
+      "p1": {
+        "x": -31,
+        "y": 344
+      },
+      "p2": {
+        "x": -76,
+        "y": 389.75
+      },
+      "focalLength": 25
+    }
+  ],
+  "width": 1600,
+  "height": 800,
+  "rayModeDensity": 9.850281170450586,
+  "showGrid": true,
+  "gridSize": 25,
+  "origin": {
+    "x": 506.40903903424294,
+    "y": -455.3001880791296
+  },
+  "scale": 1.9860715922910925,
+  "simulateColors": true
+}
