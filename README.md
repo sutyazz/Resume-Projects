@@ -53,7 +53,7 @@ A comprehensive collection of engineering and computer science projects demonstr
 ## Project Reports
 
 - Class_D_Audio_Amplifier_Report_2023.pdf` - Class D amplifier design and optimization
-- EE134_Photonics_Project_Report_2023.pdf` - Photonics engineering project documentation
+- Dual_Wavelength_Fiber_Optic_UART_Report_2025.pdf` - Photonics engineering project documentation
 - Dual_Wavelength_Fiber_Optic_UART_Report_2025.pdf` - Detailed technical report on fiber optic communication
 - Machine_Learning_Flight_Pathing_Report_2025.pdf` - Comprehensive analysis of ML flight optimization
 - Wearable_PPG_Sensor_PCB_Instructions_2024.pdf` - PCB design and implementation guide
