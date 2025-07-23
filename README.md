@@ -43,12 +43,12 @@ A comprehensive collection of engineering and computer science projects demonstr
 
 ## Technical Skills Demonstrated
 
-**Programming Languages:** Python, C/C++, JavaScript, HTML/CSS, MATLAB, Verilog
-**Frameworks & Libraries:** Flask, NumPy, Matplotlib, Pandas, SciPy
-**Hardware & Embedded:** Arduino, PCB Design, FPGA, Sensor Integration, Digital Audio Processing
-**Communication Protocols:** I²C, SPI, UART, TCP/UDP, Wi-Fi
-**Signal Processing:** Digital filters, FFT, radar processing, optical communication, audio synthesis
-**Machine Learning:** Monte Carlo methods, Bayesian updating, statistical analysis
+- `**Programming Languages:** Python, C/C++, JavaScript, HTML/CSS, MATLAB, Verilog
+- `**Frameworks & Libraries:** Flask, NumPy, Matplotlib, Pandas, SciPy
+- `**Hardware & Embedded:** Arduino, PCB Design, FPGA, Sensor Integration, Digital Audio Processing
+- `**Communication Protocols:** I²C, SPI, UART, TCP/UDP, Wi-Fi
+- `**Signal Processing:** Digital filters, FFT, radar processing, optical communication, audio synthesis
+- `**Machine Learning:** Monte Carlo methods, Bayesian updating, statistical analysis
 
 ## Project Reports
 
