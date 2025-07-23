@@ -1,42 +1,33 @@
+
 # Dual-Wavelength Fiber Optic UART (2025)
 
 ## Project Overview
-Achieved full-duplex UART communication on a single fiber optic cable by modulating blue and IR LEDs, with custom transimpedance amplifier (TIA) and comparator circuits for signal decoding.
+This project demonstrates a novel full-duplex UART communication system over a single fiber optic cable, utilizing dual-wavelength modulation with blue and infrared LEDs. Custom analog front-end circuits, including transimpedance amplifiers (TIA) and comparators, enable reliable signal decoding and separation of simultaneous bidirectional data streams.
 
 ## Skills Demonstrated
-- **Optical Communication**: Fiber optic signal transmission and reception
-- **Analog Circuit Design**: Transimpedance amplifiers, comparators, filter design
-- **Digital Communication**: UART protocol implementation, bit error rate analysis
-- **Signal Processing**: Signal integrity optimization, gain control
-- **Hardware Design**: LED drivers, photodetector circuits, amplifier design
-- **Performance Analysis**: BER measurement and optimization
+- **Optical Communication:** Fiber optic transmission and reception using wavelength multiplexing
+- **Analog Circuit Design:** Custom TIA, comparator, and filter design for photodetector signal processing
+- **Digital Communication:** UART protocol implementation and bit error rate (BER) analysis
+- **Signal Processing:** Optimization of signal integrity, gain, and noise performance
+- **Hardware Design:** LED driver circuits, phototransistor receivers, PCB layout
 
 ## Key Features
-- Full-duplex communication on single fiber optic cable
-- Dual-wavelength operation (blue and IR LEDs)
-- Custom TIA and comparator design
-- High-speed UART communication
-- Optimized signal integrity with low BER
+- Full-duplex UART over a single fiber using blue and IR LEDs
+- Custom analog front-end for high-speed, low-error communication
+- Real-time BER measurement and performance optimization
+- Modular design for easy integration with microcontrollers and embedded systems
 
-## Technical Implementation
-- Developed Flask web application with responsive frontend design
-- Implemented backend C programs for high-performance networking
-- Created real-time data visualization using JavaScript charting libraries
-- Integrated TCP/UDP socket programming for network communication
-- Analyzed fiber-optic transmission characteristics and performance
+## Technical Details
+- Blue and IR LEDs transmit independent UART signals simultaneously
+- Phototransistor receivers with TIA and comparator circuits decode each wavelength
+- System tested for data rates, BER, and signal integrity under various conditions
+- Includes schematics, PCB layouts, and waveform analysis
 
-## Technology Stack
-- **Frontend**: HTML5, CSS3, JavaScript
-- **Backend**: Python Flask, C programming
-- **Networking**: TCP/UDP protocols, socket programming
-- **Visualization**: JavaScript charting libraries
-- **System Integration**: Military network systems
-
-## Files
-- Flask application files and web interface components
-- C-based networking utilities
-- Real-time data processing scripts
-- Configuration files for military system integration
+## Repository Contents
+- Schematic files and PCB designs (KiCad)
+- Test data, waveform images, and performance analysis
+- Python scripts for data acquisition and BER calculation
+- Documentation and project proposal
 
 ## Results
-Successfully deployed in military environment with real-time latency monitoring capabilities and comprehensive fiber-optic transmission analysis.
+Achieved robust full-duplex UART communication with low BER and high signal integrity. The system demonstrates practical fiber optic multiplexing for embedded applications and provides a foundation for further research in optical data links.
