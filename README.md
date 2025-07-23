@@ -4,14 +4,17 @@ A comprehensive collection of engineering and computer science projects demonstr
 
 ## Table of Contents
 
-1. [CS109 Challenge Project](#cs109-challenge-project)
-2. [EE118 Final Project](#ee118-final-project)
-3. [EE119 Final Project](#ee119-final-project)
-4. [EE156 Final Project](#ee156-final-project)
-5. [EE167 Final Project](#ee167-final-project)
-6. [Class D Audio Amplifier](#class-d-audio-amplifier)
-7. [Machine Learning VR Project](#machine-learning-vr-project)
-8. [Dual-Wavelength Fiber Optic UART](#dual-wavelength-fiber-optic-uart)
+1. [Digital Audio System FPGA](./Digital_Audio_System_FPGA_2023/)
+2. [Class D Audio Amplifier](./Class_D_Audio_Amplifier_2023/)
+3. [Machine Learning Optimized Flight Pathing](./Machine_Learning_Flight_Pathing_2025/)
+4. [Machine Learning VR Project](./Machine_Learning_VR_Project_2024/)
+5. [Autonomous Robot](./Autonomous_Robot_2025/)
+6. [Autonomous Robot Web Interface](./Autonomous_Robot_Web_Interface_2025/)
+7. [Wearable PPG Sensor](./Wearable_PPG_Sensor_2024/)
+8. [Dual-Wavelength Fiber Optic UART](./Dual_Wavelength_Fiber_Optic_UART_Report_2025/)
+9. [mmWave Radar Processing](./mmWave_Radar_Processing_2024/)
+10. [Network Latency Monitoring App](./Network_Latency_Monitoring_App_2024/)
+11. [Personal Website & Daily Habit Tracker](./MyWebsite%20-%20WIP/)
 
 ---
 
@@ -19,16 +22,18 @@ A comprehensive collection of engineering and computer science projects demonstr
 
 ### 🎛️ **Digital Audio & Signal Processing**
 - **[Digital Audio System FPGA (2023)](./Digital_Audio_System_FPGA_2023/)** - Multi-feature digital audio synthesizer in Verilog with chord synthesis, ADSR modulation, and real-time effects
+- **[Class D Audio Amplifier (2023)](./Class_D_Audio_Amplifier_2023/)** - High-efficiency Class D amplifier and speaker system design
 
 ### 🤖 **Machine Learning & Data Science**
 - **[Machine Learning Optimized Flight Pathing (2025)](./Machine_Learning_Flight_Pathing_2025/)** - Python simulator using Monte Carlo sampling and Bayesian updating for eVTOL risk assessment
+- **[Machine Learning VR Project (2024)](./Machine_Learning_VR_Project_2024/)** - Immersive VR experience integrating machine learning algorithms
 
 ### 🔌 **Embedded Systems & Robotics**
 - **[Autonomous Robot (2025)](./Autonomous_Robot_2025/)** - Master-slave Arduino firmware with sensor fusion (ultrasonic, IR, IMU) and custom serial protocol
 - **[Wearable PPG Sensor (2024)](./Wearable_PPG_Sensor_2024/)** - Biometric sensor PCB with Wi-Fi communication for real-time health monitoring
 
 ### 📡 **Communication Systems**
-- **[Dual-Wavelength Fiber Optic UART (2025)](./Dual_Wavelength_Fiber_Optic_UART_2025/)** - Full-duplex UART on single fiber using blue/IR LEDs with custom TIA/comparator circuits
+- **[Dual-Wavelength Fiber Optic UART (2025)](./Dual_Wavelength_Fiber_Optic_UART_Report_2025/)** - Full-duplex UART on single fiber using blue/IR LEDs with custom TIA/comparator circuits
 - **[mmWave Radar Processing (2024)](./mmWave_Radar_Processing_2024/)** - Radar signal processing system for object detection and tracking
 
 ### 🌐 **Web Development & Networking**
