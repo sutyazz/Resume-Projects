@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+
+<!--Notes:
+<script> is just inline java script
+<style> is just inline CSS
+
+Filler image path: "C:\Users\stone\Desktop\MyPhotoJournal\FillerImage.jpg" 11/24/2023
+-->
+
+<html>
+<head>
+<title>Climb to the next peak</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+</style>
+</head>
+<body class="w3-light-grey w3-content" style="max-width:1600px">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
+  <div class="w3-container">
+    <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
+      <i class="fa fa-remove"></i>
+    </a>
+    <img src="FillerImage.jpg" style="width:45%;" class="w3-round"><br><br>
+    <h4><b>Photos</b></h4>
+  </div>
+  <div class="w3-bar-block">
+    <a href="MyPhotoJournalWebsite.html.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-th-large fa-fw w3-margin-right"></i>PORTFOLIO</a> 
+    <a href="MyPhotoJournalWebsite.LifePlot.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-user fa-fw w3-margin-right"></i>Life Plot</a> 
+    <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-user fa-fw w3-margin-right"></i>ABOUT</a> 
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-envelope fa-fw w3-margin-right"></i>CONTACT</a>
+  </div>
+  <div class="w3-panel w3-large">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+</nav>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px">
+
+  <!-- Header -->
+  <header id="portfolio">
+    <div class="w3-container">
+    <h1><b>Climb to the next peak</b></h1>
+    </div>
+  </header>
+  
+  <!-- First Photo Grid-->
+  <div id="Life-Plot" style="
+      display: block;
+      max-width: 800px;
+      width: 100%;
+      height: 500px;">
+
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <div id="myPlot" style="width:100%;max-width:700px"></div>
+
+
+    <!--HTML from the CSV file-->
+    <div id="target-div">table here</div>
+
+    <!--IN PROGRESS, NEED TO IMPLEMENT A FILE GRABBING TECHNIQUE TO GET DATA FROM SERVER, MAYBE FLASK-->
+    <script>
+    
+      const myPlot = document.getElementById('myPlot');
+
+      const yArray = [0,1];
+      const xArray = ['11/24/2024', '11/25/2024'];
+      type: 'scatter'
+
+      // Define Data
+      const data = [{
+        x: xArray,
+        y: yArray,
+        type:"scatter"
+      }];
+
+      // Define Layout
+      const layout = {
+        xaxis: {title: "Date"},
+        yaxis: {title: "Aggregate Score"},  
+        title: "Progress"
+      };
+
+      // Display using Plotly
+      Plotly.newPlot("myPlot", data);
+      
+    </script>
+    
+
+  </div>
+
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-32 w3-dark-grey">
+  <div class="w3-row-padding">
+    <div class="w3-third">
+      <h3>Keep it rolling!</h3>
+    </div>
+  </div>
+  </footer>
+  
+</html>

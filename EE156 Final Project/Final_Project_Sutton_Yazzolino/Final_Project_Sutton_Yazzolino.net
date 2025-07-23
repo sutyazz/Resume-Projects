@@ -1,0 +1,100 @@
+*
+
+.subckt Final_Project_Sutton_Yazzolino
++       VCC ; input
++       SCL ; inout
++       SDA ; inout
++       INT ; output
++       IRD ; inout
++       RD ; inout
++       ADDR ; input
++       INT ; input
+
+
+Q1 __Q1
+R8 VBUS GND 100k
+D2 __D2
+C18 GND Net-_D2-K_ 10u
+BT1 __BT1
+C23 VCC GND 0.1u
+R15 /SPI_MOSI VCC 10k
+R14 /SD_CMD VCC 10k
+R12 /SPI_MISO VCC 10k
+Ie1 __Ie1
+TP4 __TP4
+R1 VCC /SPI-CLK 10k
+TP2 __TP2
+TP1 __TP1
+R11 VCC SCL 10k
+R10 VCC SDA 10k
+J1 __J1
+C19 VCC GND 10u
+C20 VCC GND 1u
+U4 __U4
+R9 Net-_D2-K_ Net-_U4-EN_ 10k
+R7 Net-_J3-GNDDetect_ GND 10k
+C25 VCC GND 0.1u
+J3 __J3
+C24 VCC GND 0.1u
+JP6 __JP6
+JP5 __JP5
+JP4 __JP4
+JP3 __JP3
+U3 __U3
+JP7 __JP7
+R24 VCC /LED_SDCS 10k
+C14 VCC GND 0.1u
+WifiModule1 __WifiModule1
+R21 /USB_D+ VCC 10k
+R22 /USB_D- VCC 10k
+J2 __J2
+TP6 __TP6
+JP9 __JP9
+R17 /Wifi_CS VCC 10k
+R4 /Wifi_TXO VCC 10k
+R16 /Wifi_BUSY VCC 10k
+R20 /Wifi_GPO VCC 10k
+R2 /Wifi_RXI VCC 10k
+C21 GND Net-_U3-VDDCORE_ 1u
+C22 GND Net-_U3-VDDCORE_ 10u
+L1 Net-_U3-VDDCORE_ Net-_U3-VSW_ 10u
+Y1 __Y1
+C17 Net-_U3-PA00_ GND 15p
+C16 Net-_U3-PA01_ GND 15p
+R18 /LED_TFTCS VCC 10k
+C8 VCC GND 0.1u
+R6 /reset VCC 10k
+SW1 __SW1
+FB1 __FB1
+C11 VCC GND 0.1u
+C10 VCC GND 0.1u
+C12 /VDDA GND 0.1u
+C13 /VDDA GND 10u
+C9 VCC GND 0.1u
+C15 VCC GND 0.1u
+LEDmodule1 __LEDmodule1
+R19 /LED_DC VCC 10k
+USB_D-1 __USB_D-1
+TP5 __TP5
+JP8 __JP8
+JP10 __JP10
+JP11 __JP11
+USB_D+1 __USB_D+1
+C5 Net-_LDO1.8V1-VI_ GND 10u
+C7 Net-_LDO1.8V1-VO_ GND 10u
+LDO1.8V1 __LDO1.8V1
+C6 GND Net-_LDO1.8V1-VO_ 100n
+C4 GND Net-_LDO1.8V1-VI_ 100n
+C3 Net-_LDO3.3V1-SS_ GND 1n
+LDO3.3V1 __LDO3.3V1
+R3 INT Net-_LDO1.8V1-VI_ 4.7k
+JP2 __JP2
+U1 __U1
+JP1 __JP1
+C2 VCC GND 100n
+C1 VCC GND 10u
+U2 __U2
+R13 GND ADDR 10k
+R5 VCC INT 10k
+
+.ends

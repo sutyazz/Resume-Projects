@@ -1,0 +1,9 @@
+device ATSAMD51J20A
+speed 4000
+si SWD
+erase
+loadbin "C:\Users\stone\Downloads\bootloader-sparkfun-samd51-thingplus-v3.16.0-19-g4365018.bin" 0
+R
+Halt
+Go
+qc

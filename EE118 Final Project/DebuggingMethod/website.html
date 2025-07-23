@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rectangle Map Tracker</title>
+    <style>
+        body { text-align: center; font-family: Arial, sans-serif; }
+        svg { width: 600px; height: 300px; } /* 2:1 aspect ratio */
+        #moving-square {
+            fill: red; 
+            transition: transform 0.1s linear;
+        }
+        #dynamic-dot {
+            fill: green; 
+            transition: 0.5s ease-in-out;
+        }
+        .overlay {
+            fill: rgba(255, 0, 0, 0.5);
+            stroke: black;
+            stroke-width: 2;
+        }
+        .green-box { fill: green; }
+        #info { font-size: 18px; margin-top: 20px; color: blue; }
+    </style>
+</head>
+<body>
+    <h2>Rectangle Map Tracker</h2>
+    <svg viewBox="0 0 600 300">
+        <!-- Green Square (Reference Point) -->
+        <rect x="30" y="140" width="20" height="20" class="green-box"/>
+        
+        <!-- Green Dot (Dynamic Position) -->
+        <circle id="dynamic-dot" cx="300" cy="50" r="10"/>
+
+        <!-- Rectangle Boundary -->
+        <rect x="50" y="50" width="500" height="200" fill="none" stroke="black" stroke-width="5"/>
+        
+        <!-- Red Semi-Transparent Overlay -->
+        <rect x="150" y="210" width="300" height="40" class="overlay"/>
+
+        <!-- Moving Red Square -->
+        <rect id="moving-square" x="50" y="250" width="20" height="20"/>
+    </svg>
+
+    <!-- Information Box -->
+    <p id="info">Waiting for data...</p>
+
+    <script>
+        async function updatePosition() {
+            try {
+                let response = await fetch("http://your-esp32-ip/coords");
+                let data = await response.json();
+    
+                let square = document.getElementById("moving-square");
+                let dynamicDot = document.getElementById("dynamic-dot");
+                let infoBox = document.getElementById("info");
+    
+                // Get position and heading of robot directly from Arduino
+                let x = Math.max(50, Math.min(550, data.x)); 
+                let y = Math.max(50, Math.min(250, data.y)); 
+                let heading = data.heading; // Rotation angle
+    
+                // Update red square's position and rotation
+                square.setAttribute("transform", `translate(${x} ${y}) rotate(${heading} ${x + 10} ${y + 10})`);
+    
+                // Move the green dot dynamically
+                let dynamicX = Math.max(50, Math.min(550, data.dynamic_x));
+                dynamicDot.setAttribute("cx", dynamicX);
+    
+                // Update info
+                infoBox.innerText = `Position: (${x.toFixed(1)}, ${y.toFixed(1)}) | Heading: ${heading.toFixed(1)}°`;
+            } catch (error) {
+                console.error("Failed to get data", error);
+            }
+        }
+        
+        setInterval(updatePosition, 100); // Update every 100ms
+    </script>
+    
+</body>
+</html>

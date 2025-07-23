@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Test Page</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: "Raleway", sans-serif
+    }
+  </style>
+</head>
+
+<p>
+  words <strong> strong </strong> <b>bold</b> more words?
+</p>
+<div class="w3-row-padding">
+  <div class="w3-third w3-container w3-margin-bottom">
+    <!--creates div for images then operates JS on cursor hover-->
+    <!--this puts a gradient over the photo when the class that contains it is in is hovered over with the cursor-->
+    <div class="image container"
+      onmouseover="this.style.backgroundImage='linear-gradient(to bottom right, transparent, transparent, white, white)'"
+      onmouseout="this.style.backgroundImage='linear-gradient(transparent, transparent)'"
+      style="width: auto; height: 200px; border: 0px solid #000;">
+      <!--idk what "this" does in JS but it works so im not touching it-->
+
+      <img src="C:\Users\stone\Desktop\MyPhotoJournal\FillerImage.jpg" alt="Insert an Image"
+        style="position: relative; width:100%; z-index: -1; display:block; height:200px; width:auto;">
+      <div class="overlay text"
+        style="position: absolute; top: 215px; font-family: Courier; font-size: 30px; text-align: right; width:300px;">
+        <b>OR.</b>
+      </div><!--this text align isn't proper, I want it to be relative to the image rather than absolute positioning-->
+    </div>
+
+    <div class="w3-container w3-white">
+      <b>Footbridge Trailhead</b>
+
+      <p>
+        Well, this photo was taken when I went bridge jumping after a great hike up kings mountain with Sam Elliot and
+        Devin
+      </p>
+      <p>
+        <a href="C:\Users\stone\Desktop\MyPhotoJournal\MyPhotoJournalWebsite.page1.html">Jan 1 2023</a>
+      </p>
+    </div>
+  </div>
+
+</html>

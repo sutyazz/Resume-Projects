@@ -1,0 +1,46 @@
+##########################FLASK MODULE##################################
+#unused index template page definition for the dynamic portions of an html rendering within flask
+
+def index():
+    username = request.args.get('username', 'default_user')
+    plot_all = request.args.get('plot_all', 'false').lower() == 'true'
+    column_to_plot = request.args.get('column_to_plot', 'Score')
+    csv_path = f'User_CSV_Files/{username}.csv'
+
+    if not os.path.exists(csv_path):
+        create_new_user_csv_file(username)
+
+    fill_missing_dates(username)
+
+    df = pd.read_csv(csv_path)
+    task_columns = COLUMNS[1:] 
+    df['Score'] = df[task_columns].apply(pd.to_numeric, errors='coerce').sum(axis=1)
+
+    if plot_all:
+        fig = go.Figure()
+        for col in task_columns:
+            fig.add_trace(go.Scatter(
+                x=df['Date'], 
+                y=df[col], 
+                mode='lines+markers',
+                name=col
+            ))
+        fig.update_layout(
+            title=f"All Habit Columns Over Time for {username}", 
+            xaxis_title='Date', 
+            yaxis_title='Habit Value',
+            template='plotly_white'
+        )
+    else:
+        if column_to_plot not in df.columns:
+            column_to_plot = 'Score'
+        fig = px.scatter(df, x='Date', y=column_to_plot, 
+                         title=f"{column_to_plot} per Day for {username}", 
+                         custom_data=df.columns, 
+                         text=column_to_plot)
+        fig.update_traces(mode="lines+markers")
+
+    plot_div = fig.to_html(full_html=False)
+
+    return render_template('index.html', table=df.to_html(index=False), 
+                           plot_div=plot_div, username=username, COLUMNS=COLUMNS)

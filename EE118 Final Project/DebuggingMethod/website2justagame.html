@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rectangle Map Tracker</title>
+    <style>
+        body { text-align: center; font-family: Arial, sans-serif; }
+        svg { width: 600px; height: 300px; } /* 2:1 aspect ratio */
+        #moving-square {
+            fill: red; 
+            transition: transform 0.1s linear;
+        }
+        #dynamic-dot {
+            fill: green; 
+            transition: 0.5s ease-in-out;
+        }
+        .overlay {
+            fill: rgba(255, 0, 0, 0.5);
+            stroke: black;
+            stroke-width: 2;
+        }
+        .green-box { fill: green; }
+        #info { font-size: 18px; margin-top: 20px; color: blue; }
+    </style>
+</head>
+<body>
+    <h2>Rectangle Map Tracker</h2>
+    <svg id="svgCanvas" viewBox="0 0 600 300">
+        <!-- Green Square (Reference Point) -->
+        <rect x="30" y="140" width="20" height="20" class="green-box"/>
+        
+        <!-- Green Dot (Dynamic Position) -->
+        <circle id="dynamic-dot" cx="300" cy="50" r="10"/>
+
+        <!-- Rectangle Boundary (Allowed Area) -->
+        <rect x="50" y="50" width="500" height="200" fill="none" stroke="black" stroke-width="5"/>
+        
+        <!-- Red Semi-Transparent Overlay (Forbidden Area) -->
+        <rect x="150" y="210" width="300" height="40" class="overlay"/>
+
+        <!-- Moving Red Square -->
+        <rect id="moving-square" x="50" y="250" width="20" height="20"/>
+    </svg>
+
+    <!-- Information Box -->
+    <p id="info">Move your mouse over the large rectangle!</p>
+
+    <script>
+        const svg = document.getElementById("svgCanvas");
+        const movingSquare = document.getElementById("moving-square");
+        const infoBox = document.getElementById("info");
+
+        // Allowed area boundaries (from the large rectangle)
+        const ALLOWED_X = 50;
+        const ALLOWED_Y = 50;
+        const ALLOWED_WIDTH = 500;
+        const ALLOWED_HEIGHT = 200;
+        // The moving square dimensions
+        const SQUARE_SIZE = 20;
+        // Forbidden area (red overlay) boundaries
+        const FORBIDDEN_X = 150;
+        const FORBIDDEN_Y = 210;
+        const FORBIDDEN_WIDTH = 300;
+        const FORBIDDEN_HEIGHT = 40;
+        
+        // Calculate max allowed top-left coordinates for the moving square
+        const MAX_X = ALLOWED_X + ALLOWED_WIDTH - SQUARE_SIZE; // 50 + 500 - 20 = 530
+        const MAX_Y = ALLOWED_Y + ALLOWED_HEIGHT - SQUARE_SIZE; // 50 + 200 - 20 = 230
+        
+        // For forbidden area: if the square overlaps horizontally with the forbidden area,
+        // its y must be such that the square's bottom (y + 20) is <= FORBIDDEN_Y (210),
+        // i.e., y must be <= 190.
+        const FORBIDDEN_MAX_Y = FORBIDDEN_Y - SQUARE_SIZE; // 210 - 20 = 190
+
+        // Utility to get mouse coordinates relative to the SVG coordinate system.
+        function getSVGCoordinates(evt) {
+            const pt = svg.createSVGPoint();
+            pt.x = evt.clientX;
+            pt.y = evt.clientY;
+            return pt.matrixTransform(svg.getScreenCTM().inverse());
+        }
+        
+        svg.addEventListener("mousemove", function(evt) {
+            let coords = getSVGCoordinates(evt);
+            // Center the square on the mouse pointer
+            let proposedX = coords.x - SQUARE_SIZE / 2;
+            let proposedY = coords.y - SQUARE_SIZE / 2;
+
+            // Clamp within allowed area
+            proposedX = Math.max(ALLOWED_X, Math.min(MAX_X, proposedX));
+            proposedY = Math.max(ALLOWED_Y, Math.min(MAX_Y, proposedY));
+
+            // Check for overlap with forbidden area horizontally.
+            // If the moving square's x-range overlaps the forbidden x-range, then restrict its y.
+            if (proposedX < (FORBIDDEN_X + FORBIDDEN_WIDTH) && (proposedX + SQUARE_SIZE) > FORBIDDEN_X) {
+                // If its y would cause the square to intrude the forbidden area, clamp y to FORBIDDEN_MAX_Y.
+                if (proposedY > FORBIDDEN_MAX_Y) {
+                    proposedY = FORBIDDEN_MAX_Y;
+                }
+            }
+
+            // Update the red square's position
+            movingSquare.setAttribute("transform", `translate(${proposedX} ${proposedY})`);
+            infoBox.innerText = `Square Position: (${proposedX.toFixed(1)}, ${proposedY.toFixed(1)})`;
+        });
+    </script>
+    
+</body>
+</html>

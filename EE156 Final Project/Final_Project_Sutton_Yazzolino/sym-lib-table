@@ -1,0 +1,5 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "Final_Project_Sutton_Yazzolino-eagle-import")(type "KiCad")(uri "${KIPRJMOD}/Final_Project_Sutton_Yazzolino-eagle-import.kicad_sym")(options "")(descr ""))
+  (lib (name "ADAFRUIT MICROSD EXAMPLE FOR KICAD-eagle-import")(type "KiCad")(uri "C:/Users/stone/Downloads/ADAFRUIT MICROSD EXAMPLE FOR KICAD/ADAFRUIT MICROSD EXAMPLE FOR KICAD-eagle-import.kicad_sym")(options "")(descr ""))
+)

@@ -1,0 +1,57 @@
+<!DOCTYPE html> 
+<html lang="en">
+
+<head>
+    <title>Admin Page</title>
+    <link rel="stylesheet" href="/static/admin.css">
+</head>
+
+<body>
+
+    <!-- Welcome Section -->
+    <h1>Welcome, Admin</h1>
+    <p>Manage users by creating or deleting user files below.</p>
+    <ul>
+        <li><a href="/view-all-users">View All Users</a></li>
+        <li><a href="/manage-users">Manage Users</a></li>
+        <li><a href="/">Back to Login</a></li>
+    </ul>
+
+    <!-- Flash Messages Section -->
+    {% with messages = get_flashed_messages(with_categories=true) %}
+    {% if messages %}
+    <ul class="flash-messages">
+        {% for category, message in messages %}
+        <li class="flash-message {{ category }}">{{ message }}</li>
+        {% endfor %}
+    </ul>
+    {% endif %}
+    {% endwith %}
+
+    <!-- Create User Form -->
+    <div class="card">
+        <h2>Create a New User</h2>
+        <form action="/admin" method="post">
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" placeholder="Enter username" required>
+            </div>
+            <button type="submit" class="btn-primary">Create User</button>
+        </form>
+    </div>
+
+    <!-- Delete User Form -->
+    <div class="card">
+        <h2>Delete a User's CSV File</h2>
+        <form action="/delete-user-csv" method="post">
+            <div class="form-group">
+                <label for="delete-username">Username</label>
+                <input type="text" id="delete-username" name="username" placeholder="Enter username to delete" required>
+            </div>
+            <button type="submit" class="btn-danger">Delete User CSV</button>
+        </form>
+    </div>
+
+</body>
+
+</html>

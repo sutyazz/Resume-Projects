@@ -1,0 +1,1001 @@
+User,Time of Travel,Starting Location,Destination,Duration (min),Delay (min),Reliability (%)
+Evan Anderson,18:59,University Park,Stanford Shopping Center,10,0,100
+Oliver Smith,06:47,University Ave,Palo Alto City Hall,13,2,96
+Nina Martin,17:46,Downtown Palo Alto,Palo Alto Public Library,16,4,92
+Liam Wilson,08:19,Alpine Drive,Stanford Shopping Center,19,6,88
+Charlie Miller,16:44,Santa Cruz Ave,El Camino Real,22,8,84
+Alice Garcia,09:02,Ramona Street,Palo Alto Medical Center,25,10,80
+Yvonne Thomas,09:35,Alpine Drive,Palo Alto Farmers Market,28,1,98
+Laura Wilson,17:07,Santa Cruz Ave,Palo Alto City Hall,31,3,94
+Liam Smith,09:34,Foothill Expressway,Baylands Park,34,5,90
+Beth Moore,09:23,Page Mill Road,Rinconada Park,37,7,86
+Oliver Jackson,09:57,Alpine Drive,Baylands Park,40,9,82
+Hannah Moore,10:15,Santa Cruz Ave,Stanford University,12,0,100
+Noah Wilson,10:24,Foothill Expressway,El Camino Real,15,2,96
+Oliver Jones,16:23,Ramona Street,Palo Alto Convention Center,18,4,92
+Rachel Wilson,22:16,Middlefield Road,Palo Alto Medical Center,21,6,88
+Elijah Perez,07:28,Page Mill Road,Downtown Palo Alto,24,8,84
+Michael Jackson,12:34,Downtown Palo Alto,Palo Alto Community Center,27,10,80
+Fiona Smith,18:25,Alpine Drive,Palo Alto Community Center,30,1,98
+Steven Johnson,18:54,University Ave,Stanford Shopping Center,33,3,94
+Paula Miller,19:01,Hamilton Avenue,Palo Alto City Hall,36,5,90
+Yvonne Miller,11:31,Middlefield Road,Rinconada Park,39,7,86
+Faith Taylor,13:35,Palo Alto Caltrain,Palo Alto Medical Center,11,9,82
+Steven Rodriguez,17:29,Palo Alto Caltrain,HP Headquarters,14,0,100
+Beth Garcia,18:39,El Camino Real,HP Headquarters,17,2,96
+Hazel Jones,08:31,El Camino Real,Palo Alto Community Center,20,4,92
+Nina Jackson,18:15,Alpine Drive,HP Headquarters,23,6,88
+Gavin Lee,08:19,Downtown Palo Alto,Palo Alto Medical Center,26,8,84
+Elijah Martin,18:31,University Ave,Palo Alto Convention Center,29,10,80
+Laura Rodriguez,08:24,Downtown Palo Alto,El Camino Real,32,1,98
+Liam Smith,14:33,Ramona Street,HP Headquarters,35,3,94
+Victor Perez,07:22,El Camino Real,Stanford Shopping Center,38,5,90
+Victor White,06:34,University Ave,El Camino Real,10,7,86
+Victor Garcia,12:05,Page Mill Road,El Camino Real,13,9,82
+George Taylor,08:47,Santa Cruz Ave,Palo Alto Community Center,16,0,100
+Carter White,08:23,Hamilton Avenue,Palo Alto Convention Center,19,2,96
+Quentin Thomas,18:31,Page Mill Road,Rinconada Park,22,4,92
+Carter Miller,16:11,El Camino Real,Town & Country Mall,25,6,88
+George Lee,22:38,Santa Cruz Ave,Stanford Shopping Center,28,8,84
+Isaac Anderson,09:24,University Park,Palo Alto City Hall,31,10,80
+Kyle Williams,12:41,University Ave,Shoreline Amphitheatre,34,1,98
+Noah Johnson,10:46,Downtown Palo Alto,Shoreline Amphitheatre,37,3,94
+Gavin Rodriguez,18:52,Ramona Street,Stanford Shopping Center,40,5,90
+Zach Garcia,18:36,El Camino Real,Downtown Palo Alto,12,7,86
+Nina Jones,16:35,University Ave,Palo Alto Public Library,15,9,82
+Julia Taylor,07:36,Page Mill Road,Baylands Park,18,0,100
+Mia Garcia,13:11,University Ave,Palo Alto Farmers Market,21,2,96
+Oliver Davis,21:54,Hamilton Avenue,Palo Alto Community Center,24,4,92
+Victor Lee,17:27,Downtown Palo Alto,HP Headquarters,27,6,88
+Bob Johnson,17:54,Middlefield Road,Baylands Park,30,8,84
+Zach Anderson,16:08,Middlefield Road,Stanford Shopping Center,33,10,80
+Paula Anderson,18:35,Palo Alto Caltrain,HP Headquarters,36,1,98
+Uma Jackson,14:26,Alpine Drive,Palo Alto Public Library,39,3,94
+Xavier Moore,18:36,Santa Cruz Ave,El Camino Real,11,5,90
+Aaron Garcia,16:21,Page Mill Road,Town & Country Mall,14,7,86
+Julia Moore,08:41,University Ave,Palo Alto Public Library,17,9,82
+Steven Taylor,11:17,Foothill Expressway,Palo Alto Community Center,20,0,100
+Danielle Thomas,14:57,Palo Alto Caltrain,Stanford University,23,2,96
+Jasmine Jackson,07:41,Middlefield Road,Stanford Shopping Center,26,4,92
+Mia Jackson,11:09,Santa Cruz Ave,Palo Alto Public Library,29,6,88
+Aaron Williams,22:14,Foothill Expressway,Rinconada Park,32,8,84
+Zach Miller,16:19,Foothill Expressway,Town & Country Mall,35,10,80
+Noah Jones,13:25,Downtown Palo Alto,Stanford University,38,1,98
+Uma Wilson,17:04,Page Mill Road,Palo Alto Community Center,10,3,94
+Hannah Johnson,18:28,Palo Alto Caltrain,HP Headquarters,13,5,90
+Fiona Brown,08:34,Alpine Drive,Palo Alto Medical Center,16,7,86
+Paula Williams,15:08,Alpine Drive,Palo Alto Convention Center,19,9,82
+Gavin Garcia,18:44,University Ave,Downtown Palo Alto,22,0,100
+Kyle Rodriguez,18:49,Hamilton Avenue,Palo Alto Medical Center,25,2,96
+Beth Martin,20:13,Downtown Palo Alto,Baylands Park,28,4,92
+Quentin Davis,08:14,Palo Alto Caltrain,Rinconada Park,31,6,88
+Charlie Anderson,18:17,University Park,HP Headquarters,34,8,84
+Mia Moore,16:35,Page Mill Road,Rinconada Park,37,10,80
+Hannah Smith,09:48,Middlefield Road,Stanford Shopping Center,40,1,98
+Ivan Brown,09:15,Ramona Street,Palo Alto Convention Center,12,3,94
+Tina Jackson,17:31,Hamilton Avenue,El Camino Real,15,5,90
+Jasmine White,07:18,Page Mill Road,Town & Country Mall,18,7,86
+Alice Thomas,08:43,Santa Cruz Ave,Shoreline Amphitheatre,21,9,82
+Quentin Perez,22:26,Palo Alto Caltrain,Stanford University,24,0,100
+Fiona Taylor,16:30,Middlefield Road,Palo Alto City Hall,27,2,96
+Zach Rodriguez,07:01,El Camino Real,Town & Country Mall,30,4,92
+Tina Davis,15:52,University Ave,Stanford Shopping Center,33,6,88
+Noah Thompson,19:58,Page Mill Road,Palo Alto Medical Center,36,8,84
+Beth Taylor,19:50,Alpine Drive,HP Headquarters,39,10,80
+Paula Thompson,08:25,Foothill Expressway,Downtown Palo Alto,11,1,98
+Gavin Rodriguez,14:17,Santa Cruz Ave,HP Headquarters,14,3,94
+Steven Taylor,06:08,University Park,Palo Alto Community Center,17,5,90
+Carter Thompson,12:53,Palo Alto Caltrain,HP Headquarters,20,7,86
+Xavier Thomas,16:08,University Park,Baylands Park,23,9,82
+Hazel Thomas,09:39,Hamilton Avenue,Stanford Shopping Center,26,0,100
+Paula Rodriguez,07:09,El Camino Real,Stanford University,29,2,96
+Paula Wilson,18:51,Alpine Drive,Palo Alto Medical Center,32,4,92
+Uma Martin,21:52,Middlefield Road,Palo Alto Medical Center,35,6,88
+Hannah Jones,10:52,Palo Alto Caltrain,San Antonio Shopping Center,38,8,84
+Paula Jackson,16:44,Middlefield Road,San Antonio Shopping Center,10,10,80
+Elijah Smith,16:49,University Ave,Stanford University,13,1,98
+Uma Wilson,12:41,El Camino Real,El Camino Real,16,3,94
+Paula Garcia,18:13,Santa Cruz Ave,Palo Alto Public Library,19,5,90
+Xavier Thomas,07:08,Palo Alto Caltrain,Palo Alto Farmers Market,22,7,86
+Hazel Anderson,14:02,Foothill Expressway,HP Headquarters,25,9,82
+Hazel Thomas,18:50,El Camino Real,Palo Alto City Hall,28,0,100
+Alice Smith,09:45,El Camino Real,Rinconada Park,31,2,96
+Ivan White,07:42,Hamilton Avenue,Palo Alto City Hall,34,4,92
+Paula Thomas,15:42,Downtown Palo Alto,Stanford University,37,6,88
+Ivan Jackson,18:30,University Ave,Town & Country Mall,40,8,84
+Evan Jackson,06:25,University Ave,Palo Alto City Hall,12,10,80
+Laura Brown,15:02,Hamilton Avenue,Shoreline Amphitheatre,15,1,98
+Aaron Miller,19:52,Ramona Street,Palo Alto Medical Center,18,3,94
+Noah Brown,18:04,Hamilton Avenue,Rinconada Park,21,5,90
+Zach Taylor,08:50,University Ave,Rinconada Park,24,7,86
+Steven Garcia,17:45,El Camino Real,San Antonio Shopping Center,27,9,82
+Hazel Thompson,08:49,Downtown Palo Alto,Palo Alto Community Center,30,0,100
+Jasmine Thomas,14:31,Santa Cruz Ave,Palo Alto Medical Center,33,2,96
+Michael Johnson,16:06,University Ave,San Antonio Shopping Center,36,4,92
+Elijah Brown,16:51,Foothill Expressway,Palo Alto Medical Center,39,6,88
+Steven Garcia,07:40,El Camino Real,Palo Alto Farmers Market,11,8,84
+Isaac Taylor,06:15,University Ave,Palo Alto Community Center,14,10,80
+Isaac Moore,18:19,Hamilton Avenue,Downtown Palo Alto,17,1,98
+Gavin Moore,17:51,Downtown Palo Alto,Shoreline Amphitheatre,20,3,94
+Bob Thompson,18:30,University Park,Shoreline Amphitheatre,23,5,90
+Nina Rodriguez,20:41,University Ave,Palo Alto Public Library,26,7,86
+Diana Wilson,08:57,Middlefield Road,Town & Country Mall,29,9,82
+Zach Miller,09:35,University Ave,Shoreline Amphitheatre,32,0,100
+Kyle Williams,17:17,Downtown Palo Alto,Downtown Palo Alto,35,2,96
+Steven Rodriguez,09:31,University Park,HP Headquarters,38,4,92
+Mia Moore,07:12,University Ave,Stanford Shopping Center,10,6,88
+Kevin Garcia,09:27,Page Mill Road,Palo Alto Farmers Market,13,8,84
+Liam Anderson,17:28,El Camino Real,Palo Alto Medical Center,16,10,80
+Diana Taylor,08:13,Page Mill Road,Rinconada Park,19,1,98
+Isaac White,16:13,Santa Cruz Ave,El Camino Real,22,3,94
+Zach Jones,19:22,University Ave,Palo Alto Medical Center,25,5,90
+Victor White,17:47,University Ave,Town & Country Mall,28,7,86
+Liam White,11:09,El Camino Real,HP Headquarters,31,9,82
+Zach Rodriguez,19:20,Palo Alto Caltrain,Palo Alto Convention Center,34,0,100
+Xavier Johnson,18:19,El Camino Real,Stanford Shopping Center,37,2,96
+Diana Taylor,18:54,Palo Alto Caltrain,Town & Country Mall,40,4,92
+Tina Anderson,08:47,Palo Alto Caltrain,Stanford Shopping Center,12,6,88
+Xavier Perez,09:56,Downtown Palo Alto,Palo Alto Farmers Market,15,8,84
+Nina Smith,06:24,Santa Cruz Ave,Stanford University,18,10,80
+Zach Jackson,16:19,University Park,Palo Alto Public Library,21,1,98
+Wendy Perez,17:16,University Ave,Palo Alto Medical Center,24,3,94
+Paula Taylor,08:47,Alpine Drive,HP Headquarters,27,5,90
+Evan Jones,09:34,Santa Cruz Ave,Palo Alto Farmers Market,30,7,86
+Michael Moore,08:43,Santa Cruz Ave,Downtown Palo Alto,33,9,82
+Gavin Anderson,06:02,Foothill Expressway,Rinconada Park,36,0,100
+Laura Thomas,18:39,University Ave,Town & Country Mall,39,2,96
+Laura Garcia,08:06,Ramona Street,Stanford Shopping Center,11,4,92
+Paula Brown,10:53,Santa Cruz Ave,Stanford Shopping Center,14,6,88
+Elijah Williams,08:05,Foothill Expressway,HP Headquarters,17,8,84
+Fiona Rodriguez,09:44,Ramona Street,El Camino Real,20,10,80
+Charlie Perez,16:41,University Park,Palo Alto Community Center,23,1,98
+George Thomas,07:46,El Camino Real,Shoreline Amphitheatre,26,3,94
+Charlie Lee,19:56,Alpine Drive,Town & Country Mall,29,5,90
+Noah Garcia,17:45,University Park,Palo Alto Community Center,32,7,86
+Laura Anderson,08:04,Ramona Street,HP Headquarters,35,9,82
+Danielle Taylor,16:07,Downtown Palo Alto,Rinconada Park,38,0,100
+Zach Martin,16:53,Hamilton Avenue,Palo Alto Farmers Market,10,2,96
+Kyle Smith,09:29,El Camino Real,Palo Alto Public Library,13,4,92
+Aaron Taylor,22:43,University Park,Palo Alto City Hall,16,6,88
+Danielle Rodriguez,22:25,Middlefield Road,Palo Alto City Hall,19,8,84
+Julia Taylor,17:29,Downtown Palo Alto,Rinconada Park,22,10,80
+Paula Johnson,06:27,Alpine Drive,Palo Alto Community Center,25,1,98
+Ivan Smith,08:39,Santa Cruz Ave,Palo Alto City Hall,28,3,94
+Kyle Smith,06:35,Alpine Drive,Rinconada Park,31,5,90
+Liam Brown,11:26,Palo Alto Caltrain,Palo Alto City Hall,34,7,86
+Elijah Smith,06:31,Ramona Street,Palo Alto City Hall,37,9,82
+Bob Davis,09:27,El Camino Real,Palo Alto Community Center,40,0,100
+Kyle Martin,18:28,Page Mill Road,Palo Alto City Hall,12,2,96
+Oliver Moore,20:29,Santa Cruz Ave,Palo Alto Medical Center,15,4,92
+Yvonne Thompson,09:00,Ramona Street,Rinconada Park,18,6,88
+Faith Moore,10:20,Middlefield Road,HP Headquarters,21,8,84
+Rachel Davis,14:01,El Camino Real,Shoreline Amphitheatre,24,10,80
+Jasmine Davis,09:34,University Ave,Palo Alto City Hall,27,1,98
+Liam Thompson,06:35,Middlefield Road,Palo Alto Medical Center,30,3,94
+Xavier Davis,19:35,Hamilton Avenue,Town & Country Mall,33,5,90
+Nina Jones,15:34,Palo Alto Caltrain,San Antonio Shopping Center,36,7,86
+Nina Jackson,09:39,Middlefield Road,Rinconada Park,39,9,82
+Gavin Jackson,16:05,Hamilton Avenue,El Camino Real,11,0,100
+Paula Brown,21:20,Hamilton Avenue,Stanford Shopping Center,14,2,96
+Zach Thompson,09:37,El Camino Real,Town & Country Mall,17,4,92
+Michael Lee,18:33,University Ave,El Camino Real,20,6,88
+Aaron Rodriguez,09:37,Page Mill Road,Downtown Palo Alto,23,8,84
+Quentin Garcia,15:27,Palo Alto Caltrain,Palo Alto Farmers Market,26,10,80
+Liam Davis,18:40,Palo Alto Caltrain,Stanford University,29,1,98
+Alice Brown,09:42,Santa Cruz Ave,Town & Country Mall,32,3,94
+Nina Moore,20:58,Ramona Street,Palo Alto City Hall,35,5,90
+Faith Taylor,18:25,Palo Alto Caltrain,HP Headquarters,38,7,86
+Bob Perez,20:11,Santa Cruz Ave,Stanford University,10,9,82
+Rachel White,16:59,Hamilton Avenue,Palo Alto City Hall,13,0,100
+Diana Wilson,19:59,University Park,El Camino Real,16,2,96
+Noah Jackson,11:15,University Ave,Palo Alto Medical Center,19,4,92
+Laura Smith,08:28,Foothill Expressway,Stanford Shopping Center,22,6,88
+Aaron Brown,17:19,Page Mill Road,Palo Alto Public Library,25,8,84
+Faith Martin,17:26,El Camino Real,San Antonio Shopping Center,28,10,80
+Danielle Moore,09:30,Palo Alto Caltrain,Palo Alto Public Library,31,1,98
+Noah Wilson,21:17,Santa Cruz Ave,Baylands Park,34,3,94
+Nina Smith,16:32,Middlefield Road,Town & Country Mall,37,5,90
+Faith Jones,17:32,Downtown Palo Alto,Palo Alto Public Library,40,7,86
+Bob Jackson,16:46,Santa Cruz Ave,Palo Alto City Hall,12,9,82
+Wendy Johnson,21:40,Downtown Palo Alto,Town & Country Mall,15,0,100
+Gavin Thompson,07:52,El Camino Real,Palo Alto Farmers Market,18,2,96
+Kyle Perez,15:49,University Park,Shoreline Amphitheatre,21,4,92
+Danielle Thompson,17:23,Foothill Expressway,Baylands Park,24,6,88
+Beth Taylor,08:19,Middlefield Road,Stanford University,27,8,84
+Zach Johnson,14:35,Page Mill Road,Rinconada Park,30,10,80
+Xavier Jones,15:03,University Ave,Rinconada Park,33,1,98
+Danielle White,07:35,Ramona Street,San Antonio Shopping Center,36,3,94
+Aaron Brown,14:59,Downtown Palo Alto,El Camino Real,39,5,90
+Xavier Davis,15:02,El Camino Real,Stanford Shopping Center,11,7,86
+Gavin Davis,17:18,Foothill Expressway,Stanford University,14,9,82
+Kevin Martin,14:01,El Camino Real,Palo Alto Medical Center,17,0,100
+Nina Rodriguez,21:35,Downtown Palo Alto,Palo Alto City Hall,20,2,96
+Tina Martin,11:25,University Ave,Stanford University,23,4,92
+Hazel Brown,16:08,Hamilton Avenue,Palo Alto Public Library,26,6,88
+Noah Rodriguez,16:38,Downtown Palo Alto,Palo Alto Convention Center,29,8,84
+Danielle Lee,09:29,El Camino Real,San Antonio Shopping Center,32,10,80
+Wendy Lee,08:25,University Park,Shoreline Amphitheatre,35,1,98
+Liam Taylor,18:34,Alpine Drive,HP Headquarters,38,3,94
+Gavin Thomas,17:03,Santa Cruz Ave,Baylands Park,10,5,90
+Steven Thomas,13:06,Ramona Street,HP Headquarters,13,7,86
+Charlie Moore,19:43,Palo Alto Caltrain,Palo Alto City Hall,16,9,82
+Charlie Lee,16:38,Foothill Expressway,Palo Alto Medical Center,19,0,100
+Jasmine White,20:23,Palo Alto Caltrain,Palo Alto Medical Center,22,2,96
+Xavier Rodriguez,17:03,Foothill Expressway,Palo Alto City Hall,25,4,92
+Alice Rodriguez,20:54,Santa Cruz Ave,Palo Alto City Hall,28,6,88
+Bob Jackson,21:27,Ramona Street,Baylands Park,31,8,84
+Rachel Anderson,17:25,El Camino Real,Stanford University,34,10,80
+Hannah Jackson,17:56,Foothill Expressway,Town & Country Mall,37,1,98
+Charlie Thompson,18:12,Downtown Palo Alto,Palo Alto Convention Center,40,3,94
+Ivan White,15:30,Hamilton Avenue,El Camino Real,12,5,90
+Kyle Anderson,06:31,Page Mill Road,Palo Alto Medical Center,15,7,86
+Kyle Rodriguez,09:47,Downtown Palo Alto,Palo Alto Public Library,18,9,82
+Mia Lee,08:11,University Ave,Downtown Palo Alto,21,0,100
+Zach Williams,11:30,Page Mill Road,El Camino Real,24,2,96
+Hazel Brown,18:44,El Camino Real,Stanford University,27,4,92
+Kevin Johnson,18:58,Santa Cruz Ave,Baylands Park,30,6,88
+Laura Garcia,09:08,Santa Cruz Ave,Palo Alto Community Center,33,8,84
+Xavier Martin,08:22,Hamilton Avenue,Palo Alto Public Library,36,10,80
+Rachel Wilson,20:01,El Camino Real,Palo Alto Medical Center,39,1,98
+Oliver Lee,16:22,Foothill Expressway,Town & Country Mall,11,3,94
+Hazel Moore,07:18,El Camino Real,Palo Alto City Hall,14,5,90
+Quentin Johnson,14:11,El Camino Real,Town & Country Mall,17,7,86
+Quentin Johnson,17:04,Downtown Palo Alto,Baylands Park,20,9,82
+Noah Johnson,08:07,Alpine Drive,Shoreline Amphitheatre,23,0,100
+Jasmine Anderson,22:18,Palo Alto Caltrain,San Antonio Shopping Center,26,2,96
+Isaac Wilson,16:08,Hamilton Avenue,HP Headquarters,29,4,92
+Ivan Perez,10:11,Downtown Palo Alto,Palo Alto Community Center,32,6,88
+Faith Davis,07:59,Downtown Palo Alto,Palo Alto Community Center,35,8,84
+Julia Thomas,08:15,Alpine Drive,Baylands Park,38,10,80
+Tina Williams,22:04,El Camino Real,El Camino Real,10,1,98
+Paula Johnson,09:57,Middlefield Road,Palo Alto City Hall,13,3,94
+Liam Jackson,09:36,Palo Alto Caltrain,Stanford University,16,5,90
+Elijah Lee,17:15,Middlefield Road,Palo Alto Public Library,19,7,86
+Rachel Lee,07:44,University Park,Palo Alto Farmers Market,22,9,82
+George Jones,18:32,Ramona Street,Town & Country Mall,25,0,100
+Xavier Lee,21:30,Foothill Expressway,El Camino Real,28,2,96
+Victor Brown,12:50,Downtown Palo Alto,Palo Alto City Hall,31,4,92
+Aaron Miller,08:07,Middlefield Road,Town & Country Mall,34,6,88
+Aaron Garcia,14:19,University Ave,Town & Country Mall,37,8,84
+Steven Lee,21:31,El Camino Real,Palo Alto Public Library,40,10,80
+Paula White,06:39,Page Mill Road,Palo Alto Convention Center,12,1,98
+Alice Williams,16:04,Palo Alto Caltrain,Palo Alto Medical Center,15,3,94
+Danielle White,16:00,El Camino Real,El Camino Real,18,5,90
+Laura Jackson,06:39,El Camino Real,Stanford University,21,7,86
+Kevin Thomas,14:56,Page Mill Road,Baylands Park,24,9,82
+George Williams,07:43,Alpine Drive,Palo Alto City Hall,27,0,100
+Isaac Williams,18:03,University Park,Downtown Palo Alto,30,2,96
+Mia Taylor,09:41,Middlefield Road,Baylands Park,33,4,92
+Noah Perez,11:21,Alpine Drive,Shoreline Amphitheatre,36,6,88
+Alice Davis,06:59,Alpine Drive,Downtown Palo Alto,39,8,84
+Paula Rodriguez,10:08,University Park,Stanford University,11,10,80
+Xavier Anderson,07:34,Ramona Street,Shoreline Amphitheatre,14,1,98
+Mia White,09:02,Palo Alto Caltrain,Downtown Palo Alto,17,3,94
+Kevin Garcia,08:41,Foothill Expressway,Rinconada Park,20,5,90
+Faith Rodriguez,18:18,Ramona Street,El Camino Real,23,7,86
+Danielle Wilson,07:45,Hamilton Avenue,HP Headquarters,26,9,82
+Carter Lee,17:19,Page Mill Road,Town & Country Mall,29,0,100
+Gavin Moore,20:12,Santa Cruz Ave,Palo Alto Public Library,32,2,96
+Charlie Thompson,06:30,University Ave,Palo Alto Public Library,35,4,92
+George Moore,18:59,Ramona Street,El Camino Real,38,6,88
+Tina Davis,18:51,Palo Alto Caltrain,El Camino Real,10,8,84
+Hannah Rodriguez,08:46,Page Mill Road,Rinconada Park,13,10,80
+Mia Thomas,07:10,Foothill Expressway,Stanford University,16,1,98
+Elijah Jackson,08:04,Alpine Drive,Town & Country Mall,19,3,94
+Fiona Lee,09:48,Palo Alto Caltrain,Stanford Shopping Center,22,5,90
+Jasmine Lee,18:45,Foothill Expressway,Palo Alto Medical Center,25,7,86
+Isaac Anderson,12:30,Santa Cruz Ave,Palo Alto City Hall,28,9,82
+Ivan Lee,22:22,Middlefield Road,Rinconada Park,31,0,100
+Nina Taylor,17:42,University Ave,Shoreline Amphitheatre,34,2,96
+Kyle Moore,18:33,El Camino Real,Shoreline Amphitheatre,37,4,92
+Michael Taylor,14:42,Downtown Palo Alto,Palo Alto Medical Center,40,6,88
+Liam Jones,14:27,Palo Alto Caltrain,Baylands Park,12,8,84
+Faith Lee,06:59,University Ave,Town & Country Mall,15,10,80
+Beth Taylor,18:48,University Park,HP Headquarters,18,1,98
+Carter Anderson,10:14,Downtown Palo Alto,Town & Country Mall,21,3,94
+Mia Thomas,16:21,El Camino Real,Palo Alto Convention Center,24,5,90
+Oliver Garcia,14:01,Santa Cruz Ave,Palo Alto City Hall,27,7,86
+Hazel Lee,17:15,El Camino Real,El Camino Real,30,9,82
+Gavin Thomas,13:40,El Camino Real,Town & Country Mall,33,0,100
+Jasmine Taylor,07:49,University Park,Palo Alto Farmers Market,36,2,96
+Evan Brown,07:12,Ramona Street,Rinconada Park,39,4,92
+Jasmine Williams,08:41,Palo Alto Caltrain,HP Headquarters,11,6,88
+Uma Lee,21:17,El Camino Real,El Camino Real,14,8,84
+Quentin Perez,09:17,University Ave,Palo Alto City Hall,17,10,80
+Steven Wilson,22:47,Ramona Street,Palo Alto Farmers Market,20,1,98
+Fiona Williams,17:52,Ramona Street,Stanford Shopping Center,23,3,94
+Kevin White,17:47,Palo Alto Caltrain,Rinconada Park,26,5,90
+Ivan Lee,09:06,Palo Alto Caltrain,HP Headquarters,29,7,86
+Wendy Lee,18:38,Middlefield Road,Shoreline Amphitheatre,32,9,82
+Kevin Lee,07:39,Downtown Palo Alto,Palo Alto Medical Center,35,0,100
+Aaron Miller,14:05,Palo Alto Caltrain,Palo Alto Community Center,38,2,96
+Michael Wilson,11:52,Middlefield Road,Town & Country Mall,10,4,92
+Isaac Thomas,09:46,El Camino Real,Palo Alto City Hall,13,6,88
+Gavin Williams,16:28,Alpine Drive,HP Headquarters,16,8,84
+Bob Smith,08:32,Middlefield Road,Stanford University,19,10,80
+Isaac Johnson,22:54,University Ave,Palo Alto Medical Center,22,1,98
+Xavier Thompson,10:46,Hamilton Avenue,Palo Alto Community Center,25,3,94
+Kyle Thomas,20:10,University Park,Town & Country Mall,28,5,90
+Evan Thompson,19:39,Downtown Palo Alto,Town & Country Mall,31,7,86
+Hazel Williams,19:19,University Park,HP Headquarters,34,9,82
+Mia Johnson,13:58,Palo Alto Caltrain,Downtown Palo Alto,37,0,100
+Hannah Wilson,09:15,Page Mill Road,HP Headquarters,40,2,96
+Paula Rodriguez,08:04,Downtown Palo Alto,Palo Alto Farmers Market,12,4,92
+Ivan White,08:40,University Ave,Palo Alto Medical Center,15,6,88
+Hannah White,21:01,Alpine Drive,HP Headquarters,18,8,84
+Hannah Davis,07:06,Hamilton Avenue,Palo Alto Community Center,21,10,80
+Nina Jones,10:03,Ramona Street,San Antonio Shopping Center,24,1,98
+George Johnson,08:12,Alpine Drive,San Antonio Shopping Center,27,3,94
+Liam Wilson,08:28,Middlefield Road,Stanford Shopping Center,30,5,90
+Ivan Jones,06:14,Alpine Drive,El Camino Real,33,7,86
+Diana Williams,16:14,Hamilton Avenue,Palo Alto Farmers Market,36,9,82
+George Miller,15:41,University Park,El Camino Real,39,0,100
+Beth Thomas,14:42,Middlefield Road,Palo Alto City Hall,11,2,96
+Ivan Garcia,12:26,Ramona Street,Palo Alto Convention Center,14,4,92
+Laura Anderson,18:27,Downtown Palo Alto,Shoreline Amphitheatre,17,6,88
+Paula Lee,07:17,El Camino Real,San Antonio Shopping Center,20,8,84
+Evan Moore,18:55,Foothill Expressway,Rinconada Park,23,10,80
+Hazel Garcia,13:49,Alpine Drive,Stanford Shopping Center,26,1,98
+Uma Johnson,16:34,Alpine Drive,San Antonio Shopping Center,29,3,94
+Liam Anderson,22:52,Downtown Palo Alto,San Antonio Shopping Center,32,5,90
+Aaron Smith,07:20,University Park,Stanford Shopping Center,35,7,86
+Hannah Moore,09:47,Page Mill Road,Stanford University,38,9,82
+Kyle Thomas,08:25,El Camino Real,Palo Alto City Hall,10,0,100
+Bob Moore,07:57,Page Mill Road,Palo Alto Convention Center,13,2,96
+Quentin Jackson,06:39,Hamilton Avenue,Rinconada Park,16,4,92
+Wendy Taylor,14:47,University Park,Downtown Palo Alto,19,6,88
+Yvonne Garcia,07:05,Middlefield Road,Downtown Palo Alto,22,8,84
+Gavin Moore,08:58,Alpine Drive,Baylands Park,25,10,80
+Nina Rodriguez,10:18,Middlefield Road,San Antonio Shopping Center,28,1,98
+Nina Smith,16:55,El Camino Real,Stanford University,31,3,94
+Evan Rodriguez,08:21,Middlefield Road,Baylands Park,34,5,90
+Danielle Taylor,17:41,Ramona Street,HP Headquarters,37,7,86
+Julia Thompson,17:27,Page Mill Road,Stanford Shopping Center,40,9,82
+Yvonne Wilson,06:54,Foothill Expressway,Palo Alto City Hall,12,0,100
+Wendy Moore,07:45,Hamilton Avenue,Palo Alto City Hall,15,2,96
+Charlie Garcia,17:04,Foothill Expressway,Palo Alto Medical Center,18,4,92
+Charlie Taylor,14:21,University Ave,Rinconada Park,21,6,88
+Bob White,09:28,Foothill Expressway,Palo Alto Convention Center,24,8,84
+George Lee,15:24,Downtown Palo Alto,Stanford Shopping Center,27,10,80
+Nina Davis,14:08,Page Mill Road,Baylands Park,30,1,98
+Julia Jones,20:11,Middlefield Road,Palo Alto Community Center,33,3,94
+Elijah Jones,10:06,El Camino Real,Palo Alto Medical Center,36,5,90
+Elijah Anderson,18:24,Downtown Palo Alto,Palo Alto Farmers Market,39,7,86
+Kevin Wilson,07:50,Ramona Street,Palo Alto Community Center,11,9,82
+Oliver Jackson,16:22,Santa Cruz Ave,Baylands Park,14,0,100
+Quentin Miller,18:55,Page Mill Road,El Camino Real,17,2,96
+Xavier Wilson,09:27,Page Mill Road,Town & Country Mall,20,4,92
+Danielle Davis,16:08,Downtown Palo Alto,San Antonio Shopping Center,23,6,88
+Kyle Perez,16:19,University Park,Stanford University,26,8,84
+Ivan Perez,09:50,University Ave,Palo Alto Public Library,29,10,80
+Kyle Taylor,15:49,University Park,Stanford University,32,1,98
+Bob Brown,09:14,Foothill Expressway,Palo Alto Medical Center,35,3,94
+Fiona Jones,18:56,Foothill Expressway,Downtown Palo Alto,38,5,90
+Beth Thompson,16:03,Palo Alto Caltrain,Palo Alto Community Center,10,7,86
+Julia Smith,16:49,El Camino Real,Palo Alto Public Library,13,9,82
+Tina Jackson,16:21,El Camino Real,Palo Alto Convention Center,16,0,100
+Hannah Davis,07:41,University Park,Stanford University,19,2,96
+Danielle Taylor,07:14,Palo Alto Caltrain,Baylands Park,22,4,92
+Uma Rodriguez,08:48,Hamilton Avenue,Palo Alto City Hall,25,6,88
+Kevin Miller,15:57,Foothill Expressway,Palo Alto City Hall,28,8,84
+Laura Williams,21:23,Santa Cruz Ave,Rinconada Park,31,10,80
+Zach Wilson,13:39,Hamilton Avenue,Palo Alto City Hall,34,1,98
+Fiona Anderson,10:46,Foothill Expressway,HP Headquarters,37,3,94
+Rachel Thomas,10:06,University Ave,Rinconada Park,40,5,90
+Jasmine Martin,09:20,Palo Alto Caltrain,Palo Alto Community Center,12,7,86
+Kevin Lee,19:34,Hamilton Avenue,Stanford University,15,9,82
+Isaac Perez,18:36,Ramona Street,Rinconada Park,18,0,100
+Kyle Martin,08:50,Ramona Street,Palo Alto Farmers Market,21,2,96
+Faith Perez,16:26,University Ave,Rinconada Park,24,4,92
+Paula Brown,08:50,Santa Cruz Ave,Stanford Shopping Center,27,6,88
+Kyle Brown,09:01,University Ave,Shoreline Amphitheatre,30,8,84
+Yvonne Thompson,07:21,Santa Cruz Ave,Shoreline Amphitheatre,33,10,80
+Rachel Martin,18:28,Page Mill Road,Stanford Shopping Center,36,1,98
+Carter Smith,08:50,Downtown Palo Alto,HP Headquarters,39,3,94
+Hazel Anderson,18:39,Page Mill Road,Rinconada Park,11,5,90
+Liam Brown,17:00,Downtown Palo Alto,Shoreline Amphitheatre,14,7,86
+Oliver Anderson,12:02,Downtown Palo Alto,Stanford University,17,9,82
+Evan Williams,17:38,Santa Cruz Ave,Palo Alto Public Library,20,0,100
+Nina Martin,09:18,Middlefield Road,Palo Alto Community Center,23,2,96
+Kyle White,08:12,Middlefield Road,Palo Alto City Hall,26,4,92
+Aaron Wilson,09:32,Foothill Expressway,El Camino Real,29,6,88
+Mia Jones,10:43,Middlefield Road,HP Headquarters,32,8,84
+Quentin White,16:09,University Ave,Palo Alto City Hall,35,10,80
+George Moore,08:47,Downtown Palo Alto,Stanford Shopping Center,38,1,98
+Hazel Jackson,16:08,Foothill Expressway,Shoreline Amphitheatre,10,3,94
+Nina Anderson,17:20,Palo Alto Caltrain,Palo Alto Community Center,13,5,90
+Gavin Garcia,18:27,Middlefield Road,Palo Alto Convention Center,16,7,86
+Mia White,06:43,University Ave,Palo Alto Convention Center,19,9,82
+Hazel Miller,07:23,University Ave,Palo Alto City Hall,22,0,100
+Kevin Jones,08:42,Downtown Palo Alto,Palo Alto City Hall,25,2,96
+Bob Perez,22:13,El Camino Real,Rinconada Park,28,4,92
+Fiona Rodriguez,08:43,Downtown Palo Alto,Palo Alto Convention Center,31,6,88
+Alice Smith,08:16,El Camino Real,Palo Alto Farmers Market,34,8,84
+Rachel Wilson,11:06,University Park,Town & Country Mall,37,10,80
+Hannah Davis,14:43,Page Mill Road,Shoreline Amphitheatre,40,1,98
+Victor Brown,16:26,University Park,Palo Alto Medical Center,12,3,94
+Tina Davis,07:39,Foothill Expressway,Baylands Park,15,5,90
+Fiona Taylor,13:59,University Ave,Stanford Shopping Center,18,7,86
+Yvonne Anderson,07:07,University Ave,Palo Alto City Hall,21,9,82
+Hazel Williams,09:11,Middlefield Road,Palo Alto City Hall,24,0,100
+Evan Rodriguez,18:04,Ramona Street,El Camino Real,27,2,96
+Julia Martin,17:10,Alpine Drive,Stanford Shopping Center,30,4,92
+Kevin Davis,16:30,Ramona Street,Palo Alto Convention Center,33,6,88
+Noah Williams,19:23,Page Mill Road,Stanford Shopping Center,36,8,84
+Paula Miller,07:16,University Ave,Palo Alto Medical Center,39,10,80
+Fiona Jones,15:00,University Park,Baylands Park,11,1,98
+Danielle Jones,12:50,El Camino Real,Downtown Palo Alto,14,3,94
+Paula Rodriguez,15:49,Middlefield Road,Palo Alto Convention Center,17,5,90
+George Anderson,08:58,Alpine Drive,Stanford University,20,7,86
+Ivan Thompson,17:18,Santa Cruz Ave,Stanford University,23,9,82
+Tina Rodriguez,18:44,Downtown Palo Alto,Palo Alto Convention Center,26,0,100
+Laura Brown,19:42,Hamilton Avenue,Palo Alto Public Library,29,2,96
+Aaron Brown,20:43,Ramona Street,Rinconada Park,32,4,92
+Paula Taylor,19:30,University Ave,Downtown Palo Alto,35,6,88
+Elijah Perez,16:34,Page Mill Road,Palo Alto Convention Center,38,8,84
+Evan Johnson,16:43,Downtown Palo Alto,Palo Alto Public Library,10,10,80
+Ivan Garcia,09:17,Page Mill Road,Palo Alto Convention Center,13,1,98
+Michael Williams,22:53,Santa Cruz Ave,Rinconada Park,16,3,94
+Xavier Thomas,12:19,Middlefield Road,Baylands Park,19,5,90
+Julia Thomas,18:48,Foothill Expressway,El Camino Real,22,7,86
+George Johnson,21:43,Palo Alto Caltrain,Palo Alto Farmers Market,25,9,82
+Quentin Johnson,21:53,Alpine Drive,Stanford Shopping Center,28,0,100
+Liam Wilson,08:24,Alpine Drive,San Antonio Shopping Center,31,2,96
+George Brown,08:20,University Park,Palo Alto Medical Center,34,4,92
+Diana Garcia,18:56,Alpine Drive,Town & Country Mall,37,6,88
+Evan Moore,15:08,Santa Cruz Ave,Town & Country Mall,40,8,84
+Bob Thomas,16:34,Santa Cruz Ave,Palo Alto Medical Center,12,10,80
+Ivan Taylor,17:58,Palo Alto Caltrain,Palo Alto Convention Center,15,1,98
+Jasmine Williams,18:23,El Camino Real,Palo Alto Convention Center,18,3,94
+Hazel Jones,10:28,Page Mill Road,Town & Country Mall,21,5,90
+Mia Brown,09:33,Palo Alto Caltrain,Town & Country Mall,24,7,86
+Hannah Garcia,09:15,University Park,Palo Alto Farmers Market,27,9,82
+Laura White,17:30,Ramona Street,El Camino Real,30,0,100
+Isaac Jackson,16:38,El Camino Real,HP Headquarters,33,2,96
+Gavin Anderson,16:59,El Camino Real,Downtown Palo Alto,36,4,92
+Fiona Perez,17:45,El Camino Real,Downtown Palo Alto,39,6,88
+Alice Moore,09:33,Ramona Street,HP Headquarters,11,8,84
+Steven Smith,09:30,Downtown Palo Alto,Town & Country Mall,14,10,80
+Charlie Lee,22:50,Hamilton Avenue,San Antonio Shopping Center,17,1,98
+Kyle Smith,09:27,Ramona Street,San Antonio Shopping Center,20,3,94
+Zach Wilson,09:31,University Ave,Palo Alto Community Center,23,5,90
+Julia Johnson,19:50,University Ave,Downtown Palo Alto,26,7,86
+Uma White,18:33,Santa Cruz Ave,Rinconada Park,29,9,82
+Steven Williams,15:02,Page Mill Road,Palo Alto City Hall,32,0,100
+Zach Brown,07:41,Middlefield Road,Palo Alto Public Library,35,2,96
+Hannah Smith,06:11,University Park,Palo Alto City Hall,38,4,92
+Paula Smith,09:17,Palo Alto Caltrain,Downtown Palo Alto,10,6,88
+Quentin Jones,18:57,Downtown Palo Alto,Palo Alto Public Library,13,8,84
+Fiona Williams,08:39,Ramona Street,San Antonio Shopping Center,16,10,80
+Victor Jones,18:00,El Camino Real,Baylands Park,19,1,98
+Alice Jones,12:50,El Camino Real,Palo Alto Convention Center,22,3,94
+Aaron Smith,17:19,Middlefield Road,El Camino Real,25,5,90
+Laura Moore,07:47,Foothill Expressway,Palo Alto Convention Center,28,7,86
+George Davis,19:52,Foothill Expressway,San Antonio Shopping Center,31,9,82
+Kyle Lee,09:50,Hamilton Avenue,Palo Alto Community Center,34,0,100
+Yvonne Perez,17:48,Palo Alto Caltrain,Palo Alto City Hall,37,2,96
+Zach Smith,10:00,Foothill Expressway,El Camino Real,40,4,92
+Danielle Johnson,09:51,Alpine Drive,Palo Alto Medical Center,12,6,88
+Carter Taylor,09:02,Ramona Street,Palo Alto Medical Center,15,8,84
+Evan White,13:26,Page Mill Road,Palo Alto Farmers Market,18,10,80
+Wendy Perez,17:18,El Camino Real,Town & Country Mall,21,1,98
+Hazel Anderson,13:40,University Park,Palo Alto Community Center,24,3,94
+Steven Smith,20:39,Ramona Street,Palo Alto City Hall,27,5,90
+Tina Thompson,20:48,University Park,Palo Alto Farmers Market,30,7,86
+Kyle Martin,08:22,Alpine Drive,Stanford University,33,9,82
+Mia Taylor,21:12,Hamilton Avenue,Rinconada Park,36,0,100
+Laura Garcia,11:50,Ramona Street,Palo Alto Community Center,39,2,96
+Hannah Williams,11:32,Alpine Drive,Palo Alto Convention Center,11,4,92
+Paula Johnson,06:29,Palo Alto Caltrain,Stanford Shopping Center,14,6,88
+Hazel Anderson,15:12,Page Mill Road,Stanford Shopping Center,17,8,84
+Oliver Davis,09:58,University Ave,Palo Alto Convention Center,20,10,80
+Charlie Jones,18:46,University Ave,Palo Alto Medical Center,23,1,98
+Hazel Garcia,16:22,El Camino Real,Baylands Park,26,3,94
+Xavier Taylor,13:00,Foothill Expressway,Downtown Palo Alto,29,5,90
+Rachel Lee,21:40,Santa Cruz Ave,Palo Alto Community Center,32,7,86
+Ivan Williams,16:56,Page Mill Road,Shoreline Amphitheatre,35,9,82
+Uma Miller,22:23,Palo Alto Caltrain,Rinconada Park,38,0,100
+Diana Taylor,09:13,Palo Alto Caltrain,Stanford University,10,2,96
+Danielle Jackson,07:42,Foothill Expressway,Stanford Shopping Center,13,4,92
+Hazel Rodriguez,08:46,Downtown Palo Alto,Palo Alto City Hall,16,6,88
+Danielle Miller,17:14,University Ave,Stanford University,19,8,84
+Faith Thomas,16:04,Hamilton Avenue,Stanford University,22,10,80
+Nina Brown,09:08,Downtown Palo Alto,Rinconada Park,25,1,98
+Ivan Davis,17:53,Downtown Palo Alto,Stanford Shopping Center,28,3,94
+Aaron Perez,16:00,University Ave,Palo Alto Public Library,31,5,90
+Wendy Johnson,08:50,El Camino Real,Shoreline Amphitheatre,34,7,86
+Michael Williams,08:31,Middlefield Road,Palo Alto City Hall,37,9,82
+Mia Anderson,10:24,Page Mill Road,Palo Alto City Hall,40,0,100
+Jasmine Moore,10:58,Middlefield Road,Palo Alto Medical Center,12,2,96
+Gavin Martin,16:31,El Camino Real,San Antonio Shopping Center,15,4,92
+Jasmine Martin,15:07,University Park,Palo Alto Public Library,18,6,88
+Hannah Thompson,09:58,Downtown Palo Alto,Downtown Palo Alto,21,8,84
+Carter Smith,10:05,El Camino Real,Palo Alto City Hall,24,10,80
+Bob Taylor,22:51,Foothill Expressway,Shoreline Amphitheatre,27,1,98
+Uma Thomas,08:23,Page Mill Road,Downtown Palo Alto,30,3,94
+Hazel Williams,18:42,Ramona Street,Shoreline Amphitheatre,33,5,90
+Uma Williams,17:21,Santa Cruz Ave,HP Headquarters,36,7,86
+Ivan Garcia,09:18,Alpine Drive,Palo Alto Convention Center,39,9,82
+Laura Jackson,16:38,Alpine Drive,Stanford Shopping Center,11,0,100
+Laura Martin,15:57,Hamilton Avenue,San Antonio Shopping Center,14,2,96
+Hannah Jackson,08:53,University Ave,Baylands Park,17,4,92
+Fiona Garcia,11:00,University Park,Palo Alto Public Library,20,6,88
+Wendy Davis,08:02,Hamilton Avenue,Downtown Palo Alto,23,8,84
+Diana Taylor,18:49,University Ave,Baylands Park,26,10,80
+Danielle Davis,16:13,El Camino Real,Stanford Shopping Center,29,1,98
+Gavin Thomas,14:27,El Camino Real,Palo Alto Convention Center,32,3,94
+Nina Williams,16:01,Downtown Palo Alto,Palo Alto Community Center,35,5,90
+Danielle Johnson,16:55,Santa Cruz Ave,Palo Alto Public Library,38,7,86
+Diana White,16:01,University Park,Palo Alto Public Library,10,9,82
+Zach Miller,13:39,Palo Alto Caltrain,Stanford University,13,0,100
+Mia Williams,07:37,Santa Cruz Ave,El Camino Real,16,2,96
+Gavin Jackson,19:59,Hamilton Avenue,San Antonio Shopping Center,19,4,92
+Aaron Moore,15:03,Alpine Drive,Palo Alto City Hall,22,6,88
+Zach Wilson,14:11,Page Mill Road,Palo Alto Medical Center,25,8,84
+Uma Jackson,09:32,Alpine Drive,Palo Alto City Hall,28,10,80
+Hazel White,20:59,Ramona Street,Palo Alto Public Library,31,1,98
+Julia Wilson,07:38,Santa Cruz Ave,Palo Alto Community Center,34,3,94
+Uma Williams,18:24,Alpine Drive,Town & Country Mall,37,5,90
+Hannah Miller,10:00,El Camino Real,HP Headquarters,40,7,86
+Zach Johnson,19:51,Middlefield Road,Stanford University,12,9,82
+Oliver Davis,16:00,Foothill Expressway,Palo Alto City Hall,15,0,100
+Elijah Lee,08:42,Palo Alto Caltrain,HP Headquarters,18,2,96
+Isaac Brown,07:00,University Ave,Palo Alto Convention Center,21,4,92
+Elijah Lee,17:03,Alpine Drive,Palo Alto Medical Center,24,6,88
+Fiona Williams,17:42,Page Mill Road,San Antonio Shopping Center,27,8,84
+Kevin Thompson,16:47,Ramona Street,Palo Alto Community Center,30,10,80
+Julia Williams,07:03,El Camino Real,Town & Country Mall,33,1,98
+Julia Moore,21:59,Ramona Street,Baylands Park,36,3,94
+Jasmine Miller,17:21,University Park,Palo Alto Farmers Market,39,5,90
+Zach Brown,16:57,Ramona Street,Baylands Park,11,7,86
+Noah Wilson,16:28,Downtown Palo Alto,Town & Country Mall,14,9,82
+Isaac Martin,13:16,Page Mill Road,HP Headquarters,17,0,100
+Carter Anderson,07:37,Ramona Street,San Antonio Shopping Center,20,2,96
+Carter Perez,18:40,Middlefield Road,El Camino Real,23,4,92
+Laura Brown,21:30,Middlefield Road,San Antonio Shopping Center,26,6,88
+Julia Perez,11:36,University Ave,Stanford Shopping Center,29,8,84
+Laura White,17:33,University Ave,Palo Alto Farmers Market,32,10,80
+Paula Moore,16:56,Santa Cruz Ave,Shoreline Amphitheatre,35,1,98
+Nina Anderson,10:28,Middlefield Road,Town & Country Mall,38,3,94
+Beth Brown,14:08,El Camino Real,Palo Alto Convention Center,10,5,90
+Kyle Rodriguez,08:48,Alpine Drive,Palo Alto Public Library,13,7,86
+Liam Jones,17:35,Downtown Palo Alto,HP Headquarters,16,9,82
+Nina Perez,16:17,University Park,Downtown Palo Alto,19,0,100
+Nina Garcia,11:43,Alpine Drive,Town & Country Mall,22,2,96
+Zach Moore,09:26,University Ave,Palo Alto Medical Center,25,4,92
+Laura Davis,17:52,University Park,El Camino Real,28,6,88
+Yvonne Miller,16:56,Middlefield Road,Palo Alto City Hall,31,8,84
+Hazel Wilson,17:22,Page Mill Road,Shoreline Amphitheatre,34,10,80
+Victor Davis,18:23,University Ave,San Antonio Shopping Center,37,1,98
+Michael Thompson,17:53,Hamilton Avenue,Palo Alto Medical Center,40,3,94
+Nina Davis,20:28,Downtown Palo Alto,San Antonio Shopping Center,12,5,90
+Faith Thompson,08:19,El Camino Real,Palo Alto Medical Center,15,7,86
+Diana Johnson,11:26,El Camino Real,Stanford Shopping Center,18,9,82
+Tina Wilson,06:05,University Park,Palo Alto Community Center,21,0,100
+Evan Perez,06:44,University Park,Town & Country Mall,24,2,96
+Xavier Miller,20:27,Page Mill Road,Rinconada Park,27,4,92
+Danielle Williams,09:02,University Ave,HP Headquarters,30,6,88
+Alice Williams,13:01,Ramona Street,Palo Alto Medical Center,33,8,84
+Gavin Smith,13:55,Alpine Drive,Stanford Shopping Center,36,10,80
+Gavin Perez,17:17,Foothill Expressway,Palo Alto Medical Center,39,1,98
+Jasmine Jackson,09:54,Downtown Palo Alto,Palo Alto Farmers Market,11,3,94
+Oliver Brown,16:57,El Camino Real,Town & Country Mall,14,5,90
+Ivan Thompson,19:28,Downtown Palo Alto,Palo Alto Convention Center,17,7,86
+Hazel Davis,14:13,Middlefield Road,HP Headquarters,20,9,82
+Carter Jones,18:19,Foothill Expressway,Palo Alto Convention Center,23,0,100
+Faith White,11:23,Downtown Palo Alto,Shoreline Amphitheatre,26,2,96
+Gavin Jones,13:37,Hamilton Avenue,Palo Alto Public Library,29,4,92
+Hazel Brown,18:07,University Park,Stanford Shopping Center,32,6,88
+Uma Johnson,18:12,Santa Cruz Ave,Town & Country Mall,35,8,84
+Evan Davis,17:07,Foothill Expressway,Downtown Palo Alto,38,10,80
+Evan Taylor,16:04,Palo Alto Caltrain,Shoreline Amphitheatre,10,1,98
+Liam Thomas,18:21,Ramona Street,Palo Alto Farmers Market,13,3,94
+Laura Perez,08:19,Alpine Drive,Stanford University,16,5,90
+Xavier White,18:14,Palo Alto Caltrain,Palo Alto Community Center,19,7,86
+Danielle Johnson,18:16,Santa Cruz Ave,Stanford University,22,9,82
+Michael Taylor,08:35,Palo Alto Caltrain,Palo Alto Medical Center,25,0,100
+Elijah White,10:10,Alpine Drive,Palo Alto Community Center,28,2,96
+Carter Brown,20:50,Foothill Expressway,Palo Alto Public Library,31,4,92
+Evan Wilson,20:09,Downtown Palo Alto,Rinconada Park,34,6,88
+Hazel Garcia,14:55,University Ave,San Antonio Shopping Center,37,8,84
+Jasmine Moore,08:37,El Camino Real,Palo Alto Community Center,40,10,80
+Aaron Smith,06:51,Ramona Street,HP Headquarters,12,1,98
+Elijah Jackson,17:21,Ramona Street,Baylands Park,15,3,94
+Gavin Jones,20:55,El Camino Real,HP Headquarters,18,5,90
+Beth Perez,20:23,El Camino Real,El Camino Real,21,7,86
+Wendy Thomas,17:05,El Camino Real,Palo Alto Community Center,24,9,82
+Beth Taylor,16:30,University Park,Downtown Palo Alto,27,0,100
+Alice Brown,08:16,Middlefield Road,Baylands Park,30,2,96
+Evan Martin,09:27,University Park,Stanford Shopping Center,33,4,92
+Julia Jones,09:44,Palo Alto Caltrain,San Antonio Shopping Center,36,6,88
+Wendy Lee,16:55,Palo Alto Caltrain,Palo Alto City Hall,39,8,84
+Wendy Miller,17:26,University Park,Palo Alto City Hall,11,10,80
+Oliver Johnson,18:35,University Park,Baylands Park,14,1,98
+Zach Thomas,17:37,Middlefield Road,Palo Alto Farmers Market,17,3,94
+Jasmine Thomas,08:41,Ramona Street,Baylands Park,20,5,90
+Liam Lee,12:03,Foothill Expressway,Stanford Shopping Center,23,7,86
+Gavin Garcia,09:13,Palo Alto Caltrain,HP Headquarters,26,9,82
+Yvonne Martin,16:09,Page Mill Road,Palo Alto Convention Center,29,0,100
+Julia Brown,20:49,Page Mill Road,Downtown Palo Alto,32,2,96
+Carter Jones,09:56,Palo Alto Caltrain,Stanford University,35,4,92
+Bob Williams,08:29,Alpine Drive,Palo Alto Convention Center,38,6,88
+Wendy Davis,10:18,Santa Cruz Ave,Stanford Shopping Center,10,8,84
+George Rodriguez,09:12,Hamilton Avenue,Baylands Park,13,10,80
+Liam Thompson,12:48,Palo Alto Caltrain,Stanford University,16,1,98
+Isaac Smith,16:02,Hamilton Avenue,Shoreline Amphitheatre,19,3,94
+Fiona Taylor,12:19,Santa Cruz Ave,HP Headquarters,22,5,90
+Evan Moore,16:38,Alpine Drive,Downtown Palo Alto,25,7,86
+Wendy Taylor,21:58,Palo Alto Caltrain,Baylands Park,28,9,82
+Gavin Taylor,22:30,Alpine Drive,Shoreline Amphitheatre,31,0,100
+Gavin Brown,06:41,Page Mill Road,San Antonio Shopping Center,34,2,96
+Uma Jones,09:37,Palo Alto Caltrain,Palo Alto Convention Center,37,4,92
+Jasmine Miller,09:36,Alpine Drive,Town & Country Mall,40,6,88
+Julia Anderson,19:28,Downtown Palo Alto,Palo Alto City Hall,12,8,84
+Uma Jackson,08:30,Downtown Palo Alto,Baylands Park,15,10,80
+Ivan White,08:39,University Park,El Camino Real,18,1,98
+Mia Perez,10:42,University Ave,Palo Alto Public Library,21,3,94
+Michael Garcia,21:11,Downtown Palo Alto,HP Headquarters,24,5,90
+Evan Jackson,15:17,University Park,El Camino Real,27,7,86
+Jasmine Jackson,15:30,Santa Cruz Ave,Palo Alto Convention Center,30,9,82
+Jasmine Jackson,17:46,Alpine Drive,Palo Alto Public Library,33,0,100
+Michael Moore,09:46,Santa Cruz Ave,Palo Alto Convention Center,36,2,96
+Aaron Miller,17:45,University Ave,HP Headquarters,39,4,92
+Laura Rodriguez,08:25,Downtown Palo Alto,El Camino Real,11,6,88
+Gavin Anderson,08:49,Hamilton Avenue,Palo Alto Medical Center,14,8,84
+Faith Thompson,19:23,Santa Cruz Ave,Palo Alto Public Library,17,10,80
+Wendy Wilson,09:16,Santa Cruz Ave,Shoreline Amphitheatre,20,1,98
+Michael Wilson,18:12,University Park,Baylands Park,23,3,94
+Jasmine Perez,08:38,Foothill Expressway,HP Headquarters,26,5,90
+Kyle Moore,17:40,University Ave,Palo Alto Public Library,29,7,86
+Oliver Jackson,08:52,El Camino Real,Town & Country Mall,32,9,82
+Kyle Miller,17:59,Hamilton Avenue,Palo Alto Community Center,35,0,100
+Liam Martin,07:26,Foothill Expressway,Downtown Palo Alto,38,2,96
+Wendy Lee,17:53,Middlefield Road,Downtown Palo Alto,10,4,92
+Gavin Martin,07:21,Santa Cruz Ave,Palo Alto Farmers Market,13,6,88
+Diana Perez,21:54,Palo Alto Caltrain,Palo Alto Farmers Market,16,8,84
+Tina Davis,17:03,University Park,Town & Country Mall,19,10,80
+Rachel Martin,22:28,University Park,Town & Country Mall,22,1,98
+Laura Moore,07:24,Santa Cruz Ave,Town & Country Mall,25,3,94
+Isaac Perez,09:42,Palo Alto Caltrain,Palo Alto Medical Center,28,5,90
+Gavin Davis,15:22,Downtown Palo Alto,HP Headquarters,31,7,86
+Xavier Anderson,16:34,Foothill Expressway,HP Headquarters,34,9,82
+Fiona Taylor,08:01,Santa Cruz Ave,Town & Country Mall,37,0,100
+Beth Garcia,07:32,Alpine Drive,HP Headquarters,40,2,96
+Kevin Thomas,22:23,Alpine Drive,Palo Alto Public Library,12,4,92
+Oliver Brown,09:34,Hamilton Avenue,El Camino Real,15,6,88
+Diana Davis,07:29,Hamilton Avenue,Stanford University,18,8,84
+Hazel Perez,18:52,Santa Cruz Ave,Baylands Park,21,10,80
+Fiona Smith,18:57,Middlefield Road,Palo Alto Community Center,24,1,98
+Victor Johnson,08:14,Santa Cruz Ave,Baylands Park,27,3,94
+George Davis,14:58,Santa Cruz Ave,Palo Alto Convention Center,30,5,90
+Bob Johnson,10:34,Downtown Palo Alto,San Antonio Shopping Center,33,7,86
+Ivan Jones,07:14,Foothill Expressway,Palo Alto Convention Center,36,9,82
+Bob Rodriguez,08:47,El Camino Real,Palo Alto Convention Center,39,0,100
+Elijah Johnson,14:29,Hamilton Avenue,Palo Alto Community Center,11,2,96
+Charlie Jones,21:26,Santa Cruz Ave,Palo Alto City Hall,14,4,92
+Paula Perez,21:07,University Ave,HP Headquarters,17,6,88
+Fiona Davis,12:47,Santa Cruz Ave,Palo Alto City Hall,20,8,84
+Steven Moore,07:02,Ramona Street,Palo Alto Public Library,23,10,80
+Danielle Jones,07:03,Ramona Street,San Antonio Shopping Center,26,1,98
+Liam Johnson,22:20,Alpine Drive,San Antonio Shopping Center,29,3,94
+Wendy Johnson,16:34,Downtown Palo Alto,Town & Country Mall,32,5,90
+Paula Anderson,17:05,El Camino Real,Palo Alto Convention Center,35,7,86
+Rachel Taylor,13:04,Palo Alto Caltrain,Baylands Park,38,9,82
+Gavin Garcia,08:39,Downtown Palo Alto,El Camino Real,10,0,100
+Steven Rodriguez,13:41,Page Mill Road,HP Headquarters,13,2,96
+Evan Miller,07:21,Foothill Expressway,Rinconada Park,16,4,92
+Alice Jackson,22:29,Downtown Palo Alto,Downtown Palo Alto,19,6,88
+Jasmine Lee,16:13,Downtown Palo Alto,HP Headquarters,22,8,84
+Elijah Smith,10:51,Hamilton Avenue,Shoreline Amphitheatre,25,10,80
+Jasmine Garcia,18:16,Downtown Palo Alto,Town & Country Mall,28,1,98
+Paula Thomas,09:55,Palo Alto Caltrain,Stanford Shopping Center,31,3,94
+Steven Miller,18:33,Hamilton Avenue,Shoreline Amphitheatre,34,5,90
+Charlie Rodriguez,18:56,Foothill Expressway,Palo Alto Convention Center,37,7,86
+Hannah Rodriguez,09:29,Middlefield Road,Shoreline Amphitheatre,40,9,82
+Noah Anderson,14:05,Downtown Palo Alto,Shoreline Amphitheatre,12,0,100
+Hazel Jackson,18:13,Downtown Palo Alto,Palo Alto Public Library,15,2,96
+Elijah Garcia,07:29,Palo Alto Caltrain,Palo Alto Community Center,18,4,92
+Tina Lee,08:11,Ramona Street,Palo Alto Public Library,21,6,88
+Bob Johnson,18:07,Santa Cruz Ave,Town & Country Mall,24,8,84
+Oliver Wilson,15:13,Ramona Street,Stanford University,27,10,80
+Kevin Perez,18:02,Foothill Expressway,Palo Alto Convention Center,30,1,98
+Elijah Anderson,17:45,Foothill Expressway,Downtown Palo Alto,33,3,94
+George Thomas,17:47,El Camino Real,Rinconada Park,36,5,90
+Steven White,20:15,Foothill Expressway,Palo Alto Community Center,39,7,86
+Danielle Smith,18:16,Page Mill Road,Stanford Shopping Center,11,9,82
+George Davis,17:13,University Ave,Rinconada Park,14,0,100
+Beth Wilson,10:58,Hamilton Avenue,Rinconada Park,17,2,96
+George Martin,18:15,Middlefield Road,Baylands Park,20,4,92
+Jasmine Taylor,08:00,University Ave,Palo Alto Farmers Market,23,6,88
+Tina Smith,17:11,Alpine Drive,San Antonio Shopping Center,26,8,84
+Wendy Taylor,12:35,Ramona Street,Palo Alto City Hall,29,10,80
+Liam Martin,07:45,El Camino Real,Palo Alto Medical Center,32,1,98
+Carter Garcia,15:00,Ramona Street,Palo Alto Community Center,35,3,94
+Faith White,16:37,Ramona Street,Palo Alto City Hall,38,5,90
+Oliver Miller,06:54,Alpine Drive,Shoreline Amphitheatre,10,7,86
+Paula Garcia,16:45,Santa Cruz Ave,Palo Alto City Hall,13,9,82
+Victor Brown,10:50,Middlefield Road,Palo Alto Farmers Market,16,0,100
+Bob Garcia,14:01,University Ave,Palo Alto Convention Center,19,2,96
+Steven Perez,18:10,Foothill Expressway,Stanford Shopping Center,22,4,92
+Alice Moore,17:49,Alpine Drive,Rinconada Park,25,6,88
+Noah Perez,15:30,University Ave,Palo Alto Convention Center,28,8,84
+Quentin Perez,18:43,University Ave,Shoreline Amphitheatre,31,10,80
+Alice Taylor,09:45,Hamilton Avenue,Shoreline Amphitheatre,34,1,98
+Beth White,18:31,Alpine Drive,San Antonio Shopping Center,37,3,94
+George Thomas,06:18,Page Mill Road,Palo Alto Community Center,40,5,90
+Wendy Martin,18:06,Page Mill Road,Town & Country Mall,12,7,86
+Diana Moore,16:07,Page Mill Road,Baylands Park,15,9,82
+Diana Anderson,18:14,Middlefield Road,Palo Alto Medical Center,18,0,100
+Liam Williams,07:01,Palo Alto Caltrain,Palo Alto City Hall,21,2,96
+Zach Davis,14:16,El Camino Real,Downtown Palo Alto,24,4,92
+Gavin Lee,17:59,Palo Alto Caltrain,Palo Alto Community Center,27,6,88
+Faith Lee,17:54,Palo Alto Caltrain,Rinconada Park,30,8,84
+Quentin Jones,18:15,El Camino Real,HP Headquarters,33,10,80
+Kevin Anderson,06:13,Middlefield Road,Palo Alto Convention Center,36,1,98
+Nina Thomas,12:16,Page Mill Road,Stanford Shopping Center,39,3,94
+Charlie Miller,13:22,Page Mill Road,Palo Alto Farmers Market,11,5,90
+Liam Miller,22:02,Middlefield Road,Downtown Palo Alto,14,7,86
+Victor Wilson,19:27,Downtown Palo Alto,San Antonio Shopping Center,17,9,82
+Hannah Jones,13:04,Hamilton Avenue,Downtown Palo Alto,20,0,100
+Alice Thompson,17:26,Page Mill Road,Palo Alto Public Library,23,2,96
+Beth Williams,18:11,University Ave,Shoreline Amphitheatre,26,4,92
+Rachel Martin,18:36,Palo Alto Caltrain,Town & Country Mall,29,6,88
+Nina Brown,17:52,Santa Cruz Ave,Palo Alto Public Library,32,8,84
+Paula Johnson,07:29,University Ave,HP Headquarters,35,10,80
+Steven Jones,17:49,Santa Cruz Ave,Town & Country Mall,38,1,98
+Julia Williams,10:20,Santa Cruz Ave,Palo Alto Farmers Market,10,3,94
+Mia Garcia,18:20,Ramona Street,Palo Alto Public Library,13,5,90
+Zach Wilson,16:34,Page Mill Road,Town & Country Mall,16,7,86
+Hazel Wilson,11:42,University Ave,Shoreline Amphitheatre,19,9,82
+George Jones,16:59,Alpine Drive,Baylands Park,22,0,100
+Jasmine Brown,18:44,Ramona Street,Palo Alto Farmers Market,25,2,96
+Faith Williams,16:52,Middlefield Road,Palo Alto Farmers Market,28,4,92
+Alice Smith,20:08,University Park,Rinconada Park,31,6,88
+Bob Miller,08:02,Palo Alto Caltrain,Palo Alto Farmers Market,34,8,84
+Elijah Moore,12:37,El Camino Real,El Camino Real,37,10,80
+Fiona Brown,15:29,Page Mill Road,Baylands Park,40,1,98
+Elijah Miller,18:43,Downtown Palo Alto,Stanford Shopping Center,12,3,94
+Diana Martin,15:48,Middlefield Road,Palo Alto Public Library,15,5,90
+Kevin Anderson,08:00,Page Mill Road,Rinconada Park,18,7,86
+Evan Taylor,16:54,Palo Alto Caltrain,Stanford Shopping Center,21,9,82
+Kyle Williams,17:43,Palo Alto Caltrain,San Antonio Shopping Center,24,0,100
+Carter Perez,07:47,Palo Alto Caltrain,San Antonio Shopping Center,27,2,96
+Gavin Johnson,06:02,Palo Alto Caltrain,Palo Alto Convention Center,30,4,92
+Julia Garcia,13:12,Alpine Drive,Palo Alto Medical Center,33,6,88
+Fiona Brown,07:44,Alpine Drive,Rinconada Park,36,8,84
+Michael Taylor,07:49,Hamilton Avenue,Baylands Park,39,10,80
+Laura Garcia,09:29,Alpine Drive,HP Headquarters,11,1,98
+Faith Thomas,15:50,Hamilton Avenue,Palo Alto Farmers Market,14,3,94
+Victor Martin,11:12,University Ave,Palo Alto Medical Center,17,5,90
+Hazel Wilson,19:46,El Camino Real,Palo Alto Farmers Market,20,7,86
+Victor Thompson,14:08,Ramona Street,Shoreline Amphitheatre,23,9,82
+Mia Davis,07:24,Ramona Street,Stanford Shopping Center,26,0,100
+Steven Davis,13:58,Santa Cruz Ave,Palo Alto Farmers Market,29,2,96
+Steven Rodriguez,06:24,Palo Alto Caltrain,Palo Alto Public Library,32,4,92
+Fiona Anderson,13:06,University Ave,Baylands Park,35,6,88
+Uma Anderson,14:42,Middlefield Road,Palo Alto Medical Center,38,8,84
+Mia Wilson,21:49,El Camino Real,Stanford Shopping Center,10,10,80
+Charlie Thompson,08:09,Santa Cruz Ave,HP Headquarters,13,1,98
+Victor Brown,16:23,Foothill Expressway,Palo Alto Public Library,16,3,94
+Tina White,09:12,Alpine Drive,Shoreline Amphitheatre,19,5,90
+Ivan Smith,21:36,University Park,Palo Alto Farmers Market,22,7,86
+Wendy Lee,10:04,Foothill Expressway,Stanford University,25,9,82
+Noah Thomas,13:51,University Park,Shoreline Amphitheatre,28,0,100
+Zach Lee,07:13,University Ave,Rinconada Park,31,2,96
+Nina Williams,09:07,Palo Alto Caltrain,Town & Country Mall,34,4,92
+Danielle Lee,08:22,Page Mill Road,Palo Alto Community Center,37,6,88
+Faith Martin,21:32,Ramona Street,Palo Alto Community Center,40,8,84
+Ivan Perez,18:02,Alpine Drive,Shoreline Amphitheatre,12,10,80
+Gavin Davis,06:33,Alpine Drive,Downtown Palo Alto,15,1,98
+Michael Jackson,17:01,Downtown Palo Alto,El Camino Real,18,3,94
+Fiona Miller,16:09,Santa Cruz Ave,El Camino Real,21,5,90
+Julia White,09:59,Hamilton Avenue,Stanford University,24,7,86
+Hazel Thompson,13:20,Palo Alto Caltrain,Palo Alto Public Library,27,9,82
+Hazel Davis,09:02,El Camino Real,Stanford Shopping Center,30,0,100
+Victor Williams,17:03,Ramona Street,El Camino Real,33,2,96
+Gavin Davis,20:42,Alpine Drive,Stanford Shopping Center,36,4,92
+Hazel Smith,09:11,Hamilton Avenue,Rinconada Park,39,6,88
+Charlie Jackson,21:30,El Camino Real,San Antonio Shopping Center,11,8,84
+Rachel Jones,09:15,Middlefield Road,Rinconada Park,14,10,80
+Wendy Anderson,20:38,Downtown Palo Alto,Palo Alto Community Center,17,1,98
+Evan Miller,06:51,Hamilton Avenue,El Camino Real,20,3,94
+Xavier Garcia,13:56,University Park,Palo Alto Medical Center,23,5,90
+Paula Miller,15:42,Foothill Expressway,Palo Alto Convention Center,26,7,86
+Ivan Davis,18:57,Downtown Palo Alto,HP Headquarters,29,9,82
+Jasmine Moore,18:18,Middlefield Road,Town & Country Mall,32,0,100
+Jasmine White,11:11,Downtown Palo Alto,Town & Country Mall,35,2,96
+Wendy Moore,07:40,El Camino Real,Stanford Shopping Center,38,4,92
+Carter Martin,06:34,El Camino Real,Baylands Park,10,6,88
+Quentin Jackson,18:20,Page Mill Road,HP Headquarters,13,8,84
+Liam Wilson,19:09,Palo Alto Caltrain,Palo Alto Community Center,16,10,80
+Faith Anderson,09:16,University Park,Palo Alto Convention Center,19,1,98
+Victor Anderson,07:23,Alpine Drive,San Antonio Shopping Center,22,3,94
+Rachel Smith,20:20,Page Mill Road,Stanford University,25,5,90
+Gavin Anderson,17:48,Alpine Drive,El Camino Real,28,7,86
+Mia Williams,10:26,Downtown Palo Alto,Stanford University,31,9,82
+Charlie Wilson,14:14,Palo Alto Caltrain,Palo Alto Farmers Market,34,0,100
+Charlie Johnson,06:22,Page Mill Road,Palo Alto Public Library,37,2,96
+Liam Brown,16:52,Ramona Street,Downtown Palo Alto,40,4,92
+Kevin Thompson,16:20,Alpine Drive,Shoreline Amphitheatre,12,6,88
+Kyle Davis,19:24,Middlefield Road,Palo Alto Public Library,15,8,84
+George Johnson,22:51,Palo Alto Caltrain,Town & Country Mall,18,10,80
+Diana Martin,18:15,Alpine Drive,Stanford Shopping Center,21,1,98
+Zach Rodriguez,08:18,El Camino Real,Downtown Palo Alto,24,3,94
+Charlie Martin,09:38,Santa Cruz Ave,Palo Alto Convention Center,27,5,90
+Kevin Thompson,16:00,Santa Cruz Ave,Downtown Palo Alto,30,7,86
+Quentin Martin,20:44,Alpine Drive,El Camino Real,33,9,82
+Tina Jackson,09:08,Ramona Street,Palo Alto Community Center,36,0,100
+Uma Jackson,21:38,University Park,San Antonio Shopping Center,39,2,96
+Hannah Davis,16:05,Middlefield Road,Downtown Palo Alto,11,4,92
+Gavin Anderson,14:28,University Ave,Downtown Palo Alto,14,6,88
+Kyle Garcia,18:26,Hamilton Avenue,Rinconada Park,17,8,84
+Bob Moore,18:44,Foothill Expressway,Palo Alto Public Library,20,10,80
+Hazel Thomas,06:01,Ramona Street,San Antonio Shopping Center,23,1,98
+Faith Lee,21:32,Ramona Street,Downtown Palo Alto,26,3,94
+Mia Perez,09:33,Middlefield Road,Stanford Shopping Center,29,5,90
+Liam Miller,21:19,Middlefield Road,Palo Alto Medical Center,32,7,86
+Paula Rodriguez,12:13,Downtown Palo Alto,HP Headquarters,35,9,82
+Mia Wilson,22:30,Palo Alto Caltrain,Town & Country Mall,38,0,100
+Steven Miller,13:39,Palo Alto Caltrain,Palo Alto Convention Center,10,2,96
+Nina Miller,18:13,Foothill Expressway,Rinconada Park,13,4,92
+Zach Jones,09:56,Downtown Palo Alto,Shoreline Amphitheatre,16,6,88
+Gavin Taylor,17:27,University Park,Baylands Park,19,8,84
+Nina Jones,07:40,Downtown Palo Alto,Palo Alto Community Center,22,10,80
+Xavier Davis,17:04,Foothill Expressway,Rinconada Park,25,1,98
+Evan Thomas,14:01,Page Mill Road,Palo Alto Community Center,28,3,94
+Carter Davis,16:52,Ramona Street,Palo Alto Community Center,31,5,90
+Fiona Moore,20:41,El Camino Real,El Camino Real,34,7,86
+Elijah Garcia,18:46,Foothill Expressway,San Antonio Shopping Center,37,9,82
+Carter White,18:21,El Camino Real,Stanford University,40,0,100
+Elijah Moore,08:13,Hamilton Avenue,Palo Alto Medical Center,12,2,96
+Zach Williams,09:12,University Ave,Palo Alto Farmers Market,15,4,92
+Evan Williams,07:57,Hamilton Avenue,Palo Alto Public Library,18,6,88
+Liam White,17:20,El Camino Real,Palo Alto City Hall,21,8,84
+Tina Lee,16:00,Alpine Drive,Stanford Shopping Center,24,10,80
+Noah Garcia,18:59,Hamilton Avenue,Stanford Shopping Center,27,1,98
+Bob Rodriguez,18:09,Ramona Street,Palo Alto Farmers Market,30,3,94
+Wendy Jackson,16:19,Alpine Drive,HP Headquarters,33,5,90
+Paula Miller,13:56,Downtown Palo Alto,Town & Country Mall,36,7,86
+Quentin Martin,09:42,El Camino Real,Palo Alto Medical Center,39,9,82
+Nina Anderson,17:40,Foothill Expressway,El Camino Real,11,0,100
+Wendy Miller,07:49,University Park,Shoreline Amphitheatre,14,2,96
+Rachel Jackson,15:50,Foothill Expressway,Stanford Shopping Center,17,4,92
+Jasmine Smith,17:59,Santa Cruz Ave,Shoreline Amphitheatre,20,6,88
+Michael Moore,21:06,Middlefield Road,San Antonio Shopping Center,23,8,84
+Julia Williams,08:08,Hamilton Avenue,Shoreline Amphitheatre,26,10,80
+Aaron Williams,08:01,Foothill Expressway,Baylands Park,29,1,98
+Jasmine Miller,19:27,Ramona Street,Palo Alto Community Center,32,3,94
+Gavin Williams,20:03,University Park,Shoreline Amphitheatre,35,5,90
+Rachel Rodriguez,22:04,Middlefield Road,San Antonio Shopping Center,38,7,86
+Tina Anderson,18:05,Page Mill Road,Palo Alto City Hall,10,9,82
+Liam Thompson,06:19,Foothill Expressway,Palo Alto Convention Center,13,0,100
+Evan Lee,15:06,El Camino Real,El Camino Real,16,2,96
+Charlie Wilson,07:30,Middlefield Road,Palo Alto Public Library,19,4,92
+Ivan Lee,17:15,Middlefield Road,Palo Alto Farmers Market,22,6,88
+George Brown,08:41,El Camino Real,Palo Alto Public Library,25,8,84
+Evan Garcia,08:20,Middlefield Road,Baylands Park,28,10,80
+Victor Johnson,17:16,Palo Alto Caltrain,Shoreline Amphitheatre,31,1,98
+Uma Williams,20:45,Page Mill Road,Palo Alto Medical Center,34,3,94
+Noah Rodriguez,15:53,Hamilton Avenue,Palo Alto Farmers Market,37,5,90
+Evan Rodriguez,18:13,Foothill Expressway,HP Headquarters,40,7,86
+Kyle Wilson,06:21,Santa Cruz Ave,Palo Alto Public Library,12,9,82
+Wendy Johnson,17:36,Hamilton Avenue,Palo Alto Farmers Market,15,0,100
+Kevin Perez,16:25,Hamilton Avenue,Palo Alto Convention Center,18,2,96
+Michael Lee,18:22,Alpine Drive,Rinconada Park,21,4,92
+Wendy Martin,16:55,Downtown Palo Alto,HP Headquarters,24,6,88
+Ivan Brown,10:56,Hamilton Avenue,Downtown Palo Alto,27,8,84
+Rachel Lee,09:35,Page Mill Road,Town & Country Mall,30,10,80
+Nina Jones,07:30,Alpine Drive,Palo Alto Convention Center,33,1,98
+Liam Miller,10:48,Ramona Street,Palo Alto Convention Center,36,3,94
+Kyle Davis,18:55,El Camino Real,Palo Alto Convention Center,39,5,90
+George Williams,08:16,Hamilton Avenue,San Antonio Shopping Center,11,7,86
+Hannah Williams,09:25,Santa Cruz Ave,Shoreline Amphitheatre,14,9,82
+Aaron Taylor,11:52,Foothill Expressway,Palo Alto Convention Center,17,0,100
+Aaron Garcia,09:02,El Camino Real,Palo Alto Convention Center,20,2,96
+Faith Johnson,09:20,Middlefield Road,Palo Alto Public Library,23,4,92
+Gavin Jackson,07:24,Page Mill Road,Palo Alto Community Center,26,6,88
+Faith Williams,16:40,Middlefield Road,San Antonio Shopping Center,29,8,84
+Evan Jones,16:53,Hamilton Avenue,Stanford Shopping Center,32,10,80
+Faith Taylor,14:37,University Ave,Stanford University,35,1,98
+Laura Taylor,12:45,Alpine Drive,Palo Alto Convention Center,38,3,94
+Aaron Anderson,13:06,Page Mill Road,Palo Alto Convention Center,10,5,90
+Mia Martin,16:27,Hamilton Avenue,Palo Alto Medical Center,13,7,86
+Hannah Davis,07:13,El Camino Real,Shoreline Amphitheatre,16,9,82
+Evan Johnson,16:05,Foothill Expressway,Palo Alto Community Center,19,0,100
+Zach Perez,09:17,Ramona Street,Baylands Park,22,2,96
+Oliver Wilson,17:15,Santa Cruz Ave,Shoreline Amphitheatre,25,4,92
+Mia Johnson,15:03,Foothill Expressway,Shoreline Amphitheatre,28,6,88
+Wendy Johnson,16:46,University Park,Town & Country Mall,31,8,84
+Kevin White,20:38,El Camino Real,San Antonio Shopping Center,34,10,80
+Michael Williams,21:30,Page Mill Road,Stanford University,37,1,98
+Michael Miller,18:12,University Park,Town & Country Mall,40,3,94
+Quentin Jones,08:35,Santa Cruz Ave,El Camino Real,12,5,90
+Uma Rodriguez,13:00,El Camino Real,Palo Alto City Hall,15,7,86
+Oliver Brown,20:29,Hamilton Avenue,Downtown Palo Alto,18,9,82
+Kyle Jones,16:14,Middlefield Road,San Antonio Shopping Center,21,0,100
+Hannah Johnson,09:02,University Park,Stanford Shopping Center,24,2,96
+Ivan Lee,15:41,Palo Alto Caltrain,San Antonio Shopping Center,27,4,92
+Nina Lee,18:43,Page Mill Road,El Camino Real,30,6,88
+Fiona Taylor,21:32,El Camino Real,Rinconada Park,33,8,84
+Bob Jones,08:45,Foothill Expressway,HP Headquarters,36,10,80
+Kyle Jones,09:25,El Camino Real,HP Headquarters,39,1,98
+Alice White,16:36,Foothill Expressway,HP Headquarters,11,3,94
+Carter Perez,16:15,Santa Cruz Ave,Palo Alto Community Center,14,5,90
+Yvonne White,18:55,University Ave,El Camino Real,17,7,86
+Jasmine Garcia,18:52,Palo Alto Caltrain,Palo Alto Public Library,20,9,82
+Oliver Martin,08:47,Palo Alto Caltrain,Town & Country Mall,23,0,100
+Carter Anderson,10:23,Page Mill Road,Palo Alto Public Library,26,2,96
+Nina Smith,12:08,Santa Cruz Ave,Baylands Park,29,4,92
+Fiona Thomas,06:22,Hamilton Avenue,Baylands Park,32,6,88
+George Garcia,08:13,El Camino Real,San Antonio Shopping Center,35,8,84
+Kyle Thomas,18:20,University Park,San Antonio Shopping Center,38,10,80
+Aaron Thomas,08:10,Foothill Expressway,El Camino Real,10,1,98
+Yvonne Williams,12:29,Page Mill Road,Downtown Palo Alto,13,3,94
+Isaac Williams,17:56,Alpine Drive,San Antonio Shopping Center,16,5,90
+Michael Anderson,22:10,El Camino Real,Palo Alto Convention Center,19,7,86
+Gavin Miller,06:31,Foothill Expressway,Palo Alto City Hall,22,9,82
+Bob Martin,16:43,Alpine Drive,Baylands Park,25,0,100
+Nina Thompson,13:52,Foothill Expressway,Rinconada Park,28,2,96
+Diana Garcia,12:52,Middlefield Road,Palo Alto Convention Center,31,4,92
+Isaac Rodriguez,16:41,Alpine Drive,Palo Alto City Hall,34,6,88
+Zach Miller,15:06,Middlefield Road,Stanford University,37,8,84
+Victor Jackson,08:01,Downtown Palo Alto,Palo Alto Public Library,40,10,80
+Uma White,21:36,Downtown Palo Alto,Palo Alto Medical Center,12,1,98
+Elijah Wilson,13:19,Alpine Drive,Shoreline Amphitheatre,15,3,94
+Noah Thomas,07:08,Foothill Expressway,Palo Alto Medical Center,18,5,90
+Hannah Brown,16:12,University Ave,HP Headquarters,21,7,86
+Gavin Garcia,13:39,Ramona Street,Shoreline Amphitheatre,24,9,82
+Noah Garcia,13:53,University Park,HP Headquarters,27,0,100
+Liam Jones,14:50,University Ave,Palo Alto City Hall,30,2,96
+Kevin Jackson,08:29,Foothill Expressway,Palo Alto Medical Center,33,4,92
+Liam Moore,08:07,University Ave,Rinconada Park,36,6,88
+Oliver Brown,07:19,Middlefield Road,El Camino Real,39,8,84
+Mia Williams,16:43,Santa Cruz Ave,Palo Alto City Hall,11,10,80
+Oliver Davis,10:30,Palo Alto Caltrain,Palo Alto Convention Center,14,1,98
+Michael Anderson,09:08,Palo Alto Caltrain,Palo Alto Public Library,17,3,94
+Alice Thomas,19:18,Alpine Drive,Baylands Park,20,5,90
+Rachel Lee,08:42,University Park,San Antonio Shopping Center,23,7,86
+Alice Jones,13:39,Ramona Street,Baylands Park,26,9,82
+Bob Williams,09:03,El Camino Real,Palo Alto Farmers Market,29,0,100
+Danielle Martin,07:14,Palo Alto Caltrain,Palo Alto Convention Center,32,2,96
+Isaac Garcia,09:55,University Park,San Antonio Shopping Center,35,4,92
+George Garcia,18:43,Hamilton Avenue,San Antonio Shopping Center,38,6,88
+Alice Brown,15:44,Middlefield Road,Palo Alto Community Center,10,8,84
+Beth Garcia,17:37,Hamilton Avenue,Palo Alto Public Library,13,10,80
+Laura Brown,18:05,Downtown Palo Alto,Palo Alto Community Center,16,1,98
+Carter Taylor,17:04,University Park,Palo Alto Community Center,19,3,94
+Ivan Davis,20:53,Foothill Expressway,San Antonio Shopping Center,22,5,90
+Gavin Davis,08:48,Santa Cruz Ave,Rinconada Park,25,7,86
+Isaac Johnson,08:32,Ramona Street,Rinconada Park,28,9,82
+Bob Anderson,09:32,Santa Cruz Ave,El Camino Real,31,0,100
+Paula Moore,18:24,Hamilton Avenue,Downtown Palo Alto,34,2,96
+Danielle Wilson,12:16,Downtown Palo Alto,Stanford University,37,4,92
+Charlie Perez,08:06,Alpine Drive,San Antonio Shopping Center,40,6,88
+Liam Moore,17:07,Ramona Street,HP Headquarters,12,8,84
+Quentin Thomas,09:03,Page Mill Road,Stanford Shopping Center,15,10,80
+Beth Davis,17:39,University Ave,Palo Alto Farmers Market,18,1,98
+Nina Smith,08:22,Hamilton Avenue,Palo Alto City Hall,21,3,94
+Fiona Moore,07:41,Alpine Drive,Rinconada Park,24,5,90
+Elijah Thompson,12:16,Middlefield Road,Stanford Shopping Center,27,7,86
+Uma Martin,07:39,Middlefield Road,Town & Country Mall,30,9,82
+Wendy Jones,20:08,Ramona Street,Palo Alto Public Library,33,0,100
+Michael Johnson,19:02,Page Mill Road,Palo Alto Community Center,36,2,96
+Yvonne White,08:12,University Ave,Palo Alto Community Center,39,4,92
+Steven Lee,06:15,Santa Cruz Ave,Shoreline Amphitheatre,11,6,88
+Jasmine Thomas,12:17,Downtown Palo Alto,Palo Alto Medical Center,14,8,84
+Isaac Thompson,09:08,Hamilton Avenue,Baylands Park,17,10,80
+Steven Johnson,07:29,Palo Alto Caltrain,El Camino Real,20,1,98
+Julia Johnson,08:32,El Camino Real,Palo Alto Community Center,23,3,94
+Kevin Thompson,18:44,Page Mill Road,Palo Alto Community Center,26,5,90
+Zach Garcia,17:30,Ramona Street,Shoreline Amphitheatre,29,7,86
+Xavier Thomas,07:24,Palo Alto Caltrain,San Antonio Shopping Center,32,9,82
+Beth Thomas,16:09,Hamilton Avenue,Palo Alto Farmers Market,35,0,100
+Xavier Thomas,16:07,Foothill Expressway,Palo Alto City Hall,38,2,96
+Laura Williams,09:39,Page Mill Road,Palo Alto Public Library,10,4,92
+Jasmine Thomas,16:59,Alpine Drive,Palo Alto Convention Center,13,6,88
+Kevin Taylor,16:39,El Camino Real,Palo Alto City Hall,16,8,84
+Fiona Jackson,16:34,Ramona Street,San Antonio Shopping Center,19,10,80
+George Johnson,21:26,Hamilton Avenue,Palo Alto City Hall,22,1,98
+Wendy White,10:37,Alpine Drive,Downtown Palo Alto,25,3,94
+Danielle Thomas,13:57,Downtown Palo Alto,Stanford Shopping Center,28,5,90
+Ivan Rodriguez,08:13,University Ave,Palo Alto Public Library,31,7,86

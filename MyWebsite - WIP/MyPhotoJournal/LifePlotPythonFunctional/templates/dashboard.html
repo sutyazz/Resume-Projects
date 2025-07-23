@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Habit Tracker</title>
+    <!-- Link to CSS file -->
+    <link rel="stylesheet" href="/static/dashboard_styles.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Title Section -->
+        <h1>Habit Tracker for {{ username }}</h1>
+
+        <!-- Flash Messages(Mostly Insults) Section -->
+        {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+        <ul class="flash-messages">
+            {% for category, message in messages %}
+            <li class="flash-message {{ category }}">{{ message }}</li>
+            {% endfor %}
+        </ul>
+        {% endif %}
+        {% endwith %}
+
+        <!--Mode selector Bar-->
+        <div class="card">
+            {% if not mode_selector=='Habit_Form' %}
+            <a href="/dashboard?username={{ username }}&mode_selector=Habit_Form" class="btn-selector">Habit Form</a>
+            {% else %}
+            <a href="/dashboard?username={{ username }}&mode_selector=Habit_Form" class="btn-selector-selected">Habit
+                Form</a>
+            {% endif %}
+            {% if not mode_selector=='Score_Comparison' %}
+            <a href="/dashboard?username={{ username }}&mode_selector=Score_Comparison" class="btn-selector">Score
+                Comparison</a>
+            {% else %}
+            <a href="/dashboard?username={{ username }}&mode_selector=Score_Comparison"
+                class="btn-selector-selected">Score Comparison</a>
+            {% endif %}
+            {% if not mode_selector=='Individual_Comparison' %}
+            <a href="/dashboard?username={{ username }}&mode_selector=Individual_Comparison"
+                class="btn-selector">Individual Comparison</a>
+            {% else %}
+            <a href="/dashboard?username={{ username }}&mode_selector=Individual_Comparison"
+                class="btn-selector-selected">Individual Comparison</a>
+            {% endif %}
+            {% if not mode_selector=='Predictions' %}
+            <a href="/dashboard?username={{ username }}&mode_selector=Predictions" class="btn-selector">Future
+                Predictions</a>
+            {% else %}
+            <a href="/dashboard?username={{ username }}&mode_selector=Predictions" class="btn-selector-selected">Future
+                Predictions</a>
+            {% endif %}
+            {% if not mode_selector=='Time_Management_Helper' %}
+            <a href="/dashboard?username={{ username }}&mode_selector=Time_Management_Helper" class="btn-selector">Time
+                Management Helper</a>
+            {% else %}
+            <a href="/dashboard?username={{ username }}&mode_selector=Time_Management_Helper"
+                class="btn-selector-selected">Time Management Helper</a>
+            {% endif %}
+            {% if not mode_selector=='Habit_Form_Edit' %}
+            <a href="/dashboard?username={{ username }}&mode_selector=Habit_Form_Edit" class="btn-selector">Edit Habit
+                Form</a>
+            {% else %}
+            <a href="/dashboard?username={{ username }}&mode_selector=Habit_Form_Edit"
+                class="btn-selector-selected">Edit Habit Form</a>
+            {% endif %}
+        </div>
+
+        {% if mode_selector == 'Predictions' %}
+        <!-- Future Predictions Section -->
+        <div class="card">
+            <h2>Future Predictions</h2>
+            <!--make this section state the percentages based on CS109 calculations-->
+            <!--put an input for tasks to see expected time to take vs time it actually took-->
+            <p>Will complete tomorrow's tasks: <strong>{{ will_complete_tasks }}</strong></p>
+            <p>Percentage of certainty: <strong>{{ certainty_percentage }}%</strong></p>
+            <p>Estimated time needed: <strong>{{ time_needed }}</strong></p>
+            <p>Estimated time needed: <strong>{{ time_needed }}</strong></p>
+        </div>
+        {% endif %}
+
+        {% if mode_selector == 'Time_Management_Helper' %}
+        <!-- Future Predictions Section -->
+        <div class="card">
+            <h2>How Much Time Do I really have??</h2>
+            <!--make this section state the percentages based on CS109 calculations-->
+            <!--put an input for tasks to see expected time to take vs time it actually took-->
+            <p>Unused Time Available Today: <strong>{{ will_complete_tasks }}</strong></p>
+            <p>Weekly Allotment: <strong>{{ certainty_percentage }}%</strong></p>
+            <p>Monthly Balance: <strong>{{ time_needed }}</strong></p>
+            <p>Estimated time deficit: <strong>{{ time_needed }}</strong></p>
+        </div>
+        {% endif %}
+
+        <!-- Habit Form Adding Mode-->
+        {% if mode_selector == 'Habit_Form' %}
+        <div class="card">
+            <h2>Track Your Habits</h2>
+            <form action="/add-row" method="post">
+                <input type="hidden" name="username" value="{{ username }}">
+                <div class="form-group">
+                    {% for col in COLUMNS[1:] %}
+                    <label class="checkbox-label">
+                        {{ col }}
+                        {% if col in integer_columns %}
+                        <!-- Integer input field -->
+                        <input type="number" name="{{ col }}" value="{{ checked_values[col] }}" min="0"
+                            class="number-input">
+                        {% else %}
+                        <!-- Checkbox input field -->
+                        {% if checked_values[col] == 1 %}
+                        <input type="checkbox" name="{{ col }}" checked class="checkbox">
+                        {% else %}
+                        <input type="checkbox" name="{{ col }}" class="checkbox">
+                        {% endif %}
+                        {% endif %}
+                    </label>
+                    {% endfor %}
+                </div>
+                <button type="submit" class="btn-primary">Save Habits</button>
+            </form>
+        </div>
+        {% endif %}
+
+        {% if mode_selector=='Score_Comparison' %}
+        <!-- Comparison of Total Scores -->
+        <div class="card">
+            <h2>Comparison of Total Scores Across Users</h2>
+            <div class="plot-container">
+                {{ total_scores_plot | safe }}
+            </div>
+        </div>
+        {% endif %}
+
+
+        {% if mode_selector=='Individual_Comparison' %}
+        <!-- Individual Habit Progress -->
+        <div class="card">
+            <h2>Individual Habit Progress</h2>
+            <div class="plot-container">
+                {{ individual_plot | safe }}
+            </div>
+        </div>
+
+        {% endif %}
+
+        <!-- Toggle Edit Mode -->
+        <!-- Habit Form Editing Mode-->
+        {% if mode_selector == 'Habit_Form_Edit' %}
+        <div class="card">
+            <h2>Current Habits</h2>
+            <ul class="habit-list">
+                {% for col in COLUMNS[1:] %}
+                <li>
+                    {{ col }}
+                    <form action="/dashboard?username={{ username }}" method="post" style="display: inline;">
+                        <input type="hidden" name="column_to_remove" value="{{ col }}">
+                        <button type="submit" name="remove_column" class="btn-danger">Remove</button>
+                    </form>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+
+        <!-- Add New Habit Form -->
+        <div class="card">
+            <h2>Add New Habit</h2>
+            <form action="/dashboard?username={{ username }}" method="post">
+                <input type="text" name="new_column" placeholder="New Habit Name" required>
+                <input type="number" step="0.1" name="multiplier" placeholder="Difficulty from 1 to 10" required>
+                <button type="submit" name="add_column" class="btn-primary">Add Habit</button>
+            </form>
+        </div>
+        {% endif %}
+
+
+    </div>
+</body>
+
+</html>

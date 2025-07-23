@@ -1,0 +1,5 @@
+Circuit: * C:\Users\stone\Desktop\EE 156\Final_Project_Sutton_Yazzolino\Draft1.asc
+
+Error on line 2 : .tf 4.5v vcc
+	Syntax error: voltage or current expected.
+Fatal Error: This circuit does not contain a node other than node "0" (GND)
