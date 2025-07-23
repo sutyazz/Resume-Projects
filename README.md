@@ -9,7 +9,7 @@ A comprehensive collection of engineering and computer science projects demonstr
 3. [Machine Learning Optimized Flight Pathing](./Machine_Learning_Flight_Pathing_2025/)
 4. [Machine Learning VR Project](./Machine_Learning_VR_Project_2024/)
 5. [Autonomous Robot](./Autonomous_Robot_2025/)
-6. [Autonomous Robot Web Interface](./Autonomous_Robot_Web_Interface_2025/)
+6. [Autonomous Robot Web Project Summary](./Autonomous_Robot_Web_Project_Summary_2025/)
 7. [Wearable PPG Sensor](./Wearable_PPG_Sensor_2024/)
 8. [Dual-Wavelength Fiber Optic UART](./Dual_Wavelength_Fiber_Optic_UART_Report_2025/)
 9. [mmWave Radar Processing](./mmWave_Radar_Processing_2024/)
@@ -38,7 +38,7 @@ A comprehensive collection of engineering and computer science projects demonstr
 
 ### 🌐 **Web Development & Networking**
 - **[Network Latency Monitoring App (2024)](./Network_Latency_Monitoring_App_2024/)** - Flask-based web app for military network monitoring with C backend
-- **[Autonomous Robot Web Interface (2025)](./Autonomous_Robot_Web_Interface_2025/)** - Comprehensive web documentation and control interface
+- **[Autonomous Robot Web Project_Summary (2025)](./Autonomous_Robot_Web_Project_Summary_2025/)** - Comprehensive web documentation and Project_Summary
 - **[Personal Website & Daily Habit Tracker (2023-2024)](./MyWebsite%20-%20WIP/)** - Full-stack personal web application combining photography portfolio with habit tracking system
 
 ## Technical Skills Demonstrated
