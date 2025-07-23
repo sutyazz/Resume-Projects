@@ -1,3 +1,5 @@
+Note: Since this was an older project, the product was physical, and designs were on physical note-taking paper materials; only a summary of the product is available.
+
 # Class D Audio Amplifier & Speaker System (2023)
 
 ## Project Overview
