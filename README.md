@@ -1,4 +1,4 @@
-# Resume Projects Portfolio
+# Resume Projects Portfolio -- Branch
 
 A comprehensive collection of engineering and computer science projects demonstrating expertise across multiple domains including embedded systems, web development, machine learning, signal processing, and hardware design.
 
